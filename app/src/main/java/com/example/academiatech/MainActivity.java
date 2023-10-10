@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void openActivityLogin(View view) {
         Intent intent = new Intent(this, MainActivityLogin.class);
-        startActivity(intent);
+        startActivity(intent); //TODO TESTE GITHUB WEBHOOKS
     }
 
 }
