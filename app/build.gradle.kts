@@ -8,8 +8,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.academiatech"
-        minSdk = 24
-        targetSdk = 33
+        minSdkVersion(rootProject.extra["defaultMinSdkVersion"] as Int)
+        targetSdkVersion(rootProject.extra["defaultTargetSdkVersion"] as Int)
         versionCode = 1
         versionName = "1.0"
 
