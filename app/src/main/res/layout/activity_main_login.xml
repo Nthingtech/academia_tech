@@ -8,6 +8,43 @@
     android:backgroundTint="#D8D8D8"
     tools:context=".MainActivityLogin">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="200dp"
+        android:textColorHint="@color/material_dynamic_neutral30"
+        app:boxStrokeColor="@color/acadetech"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterTextColor="@color/acadetech"
+        app:endIconTint="@color/acadetech"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="@color/acadetech"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleTint="@color/acadetech"
+        app:placeholderTextColor="@color/acadetech"
+        app:prefixTextColor="@color/acadetech">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_italic"
+            android:hint="@string/txt_pwd"
+            android:inputType="textPassword"
+            android:layerType="none"
+            android:textColor="@color/material_dynamic_primary20"
+            android:textColorHighlight="@color/acadetech"
+            android:textColorHint="@color/material_dynamic_primary20"
+            android:textColorLink="@color/acadetech"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -17,4 +54,54 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/textViewForgotPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:text="@string/txt_forgot_password"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="320dp"
+        android:textColorHint="@color/material_dynamic_neutral30"
+        app:boxStrokeColor="@color/acadetech"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterTextColor="@color/acadetech"
+        app:endIconTint="@color/acadetech"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:hintTextColor="@color/acadetech"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleTint="@color/acadetech"
+        app:placeholderTextColor="@color/acadetech"
+        app:prefixTextColor="@color/acadetech">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_italic"
+            android:hint="@string/txt_email"
+            android:inputType="textEmailAddress"
+            android:layerType="none"
+            android:textColor="@color/material_dynamic_primary20"
+            android:textColorHighlight="@color/acadetech"
+            android:textColorHint="@color/material_dynamic_primary20"
+            android:textColorLink="@color/acadetech"
+            android:textStyle="italic" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

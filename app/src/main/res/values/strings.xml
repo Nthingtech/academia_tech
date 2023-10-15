@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">academiatech</string>
     <string name="txt_acess_account">Acesse sua conta</string>
+    <string name="txt_personal_button">Personal</string>
+    <string name="txt_forgot_password">Esqueceu a senha? Clique aqui</string>
+    <string name="txt_client_button">Cliente</string>
+    <string name="txt_email">Digite seu email</string>
+    <string name="txt_user">Usuário</string>
+    <string name="txt_pwd">Digite sua senha</string>
 </resources>
