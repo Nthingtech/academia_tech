@@ -1,4 +1,4 @@
-package com.example.academiatech;
+package com.example.academiatech.model;
 
 import com.example.academiatech.model.enums.Status;
 
