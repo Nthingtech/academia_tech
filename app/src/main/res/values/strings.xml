@@ -7,4 +7,18 @@
     <string name="txt_email">Digite seu email</string>
     <string name="txt_user">Usuário</string>
     <string name="txt_pwd">Digite sua senha</string>
+    <string name="txt_enter">Entrar</string>
+    <string name="txt_academia_tech">Academia Tech</string>
+    <string name="txt_name">Nome:</string>
+    <string name="txt_email_register">E-mail:</string>
+    <string name="txt_gender">Genêro:</string>
+    <string name="txt_masc">Masculino</string>
+    <string name="txt_fem">Feminino</string>
+    <string name="txt_user1">Usuário:</string>
+    <string name="txt_pwd_register">Senha:</string>
+    <string name="txt_confirm_pwd">Confirmar Senha:</string>
+    <string name="txt_save">Salvar</string>
+    <string name="txt_exit">Sair</string>
+    <string name="txt_birthdate">Data de nascimento:</string>
+    <string name="txt_cpf">CPF:</string>
 </resources>

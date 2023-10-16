@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginEnd="27dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="46dp"
         android:textColorHint="@color/material_dynamic_neutral30"
         app:boxStrokeColor="@color/acadetech"
         app:boxStrokeWidth="1dp"
@@ -23,10 +23,10 @@
         app:endIconTint="@color/acadetech"
         app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
         app:hintTextColor="@color/acadetech"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail"
         app:passwordToggleTint="@color/acadetech"
         app:placeholderTextColor="@color/acadetech"
         app:prefixTextColor="@color/acadetech">
@@ -50,6 +50,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -59,13 +61,14 @@
         android:id="@+id/textViewForgotPwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="33dp"
         android:text="@string/txt_forgot_password"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnter" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutEmail"
@@ -73,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginEnd="27dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginBottom="55dp"
         android:textColorHint="@color/material_dynamic_neutral30"
         app:boxStrokeColor="@color/acadetech"
         app:boxStrokeWidth="1dp"
@@ -82,10 +85,10 @@
         app:endIconTint="@color/acadetech"
         app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
         app:hintTextColor="@color/acadetech"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutPwd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:passwordToggleTint="@color/acadetech"
         app:placeholderTextColor="@color/acadetech"
         app:prefixTextColor="@color/acadetech">
@@ -103,5 +106,21 @@
             android:textColorLink="@color/acadetech"
             android:textStyle="italic" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="178dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="54dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/txt_enter"
+        android:textColor="@color/acadetech"
+        android:textColorHighlight="@color/acadetech"
+        android:textColorLink="@color/acadetech"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewForgotPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPwd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

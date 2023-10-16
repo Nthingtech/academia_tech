@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openActivityRegister(View view) { //TODO PROVISÓRIO - SOMENTE PARA TESTES VIEW REGISTER
+        Intent intent = new Intent(this, MainActivityRegister.class);
+        startActivity(intent);
+    }
+
 }
