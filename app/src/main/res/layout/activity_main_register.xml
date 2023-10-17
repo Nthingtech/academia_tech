@@ -4,184 +4,165 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/acadetech"
     tools:context=".MainActivityRegister">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
-        android:layout_width="0dp"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
         android:background="@color/acadetech"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:title="@string/txt_academia_tech"
         app:titleCentered="true"
-        app:titleTextColor="@color/design_default_color_background" />
+        app:titleTextColor="@color/design_default_color_background"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
 
     <TextView
         android:id="@+id/textViewNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="38dp"
         android:text="@string/txt_name"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextName"
-        app:layout_constraintEnd_toStartOf="@+id/editTextName"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="107dp" />
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="0dp"
+        android:layout_width="306dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewNome"
-        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="90dp" />
 
     <TextView
         android:id="@+id/textViewEmail1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="37dp"
         android:text="@string/txt_email_register"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="166dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="304dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewEmail1"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="154dp" />
 
     <TextView
         android:id="@+id/textViewGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="46dp"
         android:text="@string/txt_gender"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
-
-    <RadioButton
-        android:id="@+id/radioButtonMasc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_masc"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textViewGender"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
-
-    <RadioButton
-        android:id="@+id/radioButtonFem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/txt_fem"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="237dp" />
 
     <EditText
         android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_width="219dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textViewBirthdate"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="311dp" />
 
     <TextView
         android:id="@+id/textViewBirthdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="45dp"
         android:text="@string/txt_birthdate"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonMasc" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="325dp" />
 
     <TextView
         android:id="@+id/textViewNickName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:text="@string/txt_user1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextNickname" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="413dp" />
 
     <EditText
         android:id="@+id/editTextNickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="291dp"
-        android:layout_marginBottom="290dp"
+        android:layout_width="301dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewNickName"
-        app:layout_constraintTop_toTopOf="@+id/textViewNome" />
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="404dp" />
 
     <TextView
         android:id="@+id/textViewPwd1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:text="@string/txt_pwd_register"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="497dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="33dp"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextNickname"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNickname" />
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="483dp" />
 
     <TextView
         android:id="@+id/textViewConfPwd"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="106dp"
+        android:layout_width="117dp"
+        android:layout_height="23dp"
         android:text="@string/txt_confirm_pwd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="560dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="182dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toTopOf="@+id/textViewConfPwd" />
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="225dp">
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
