@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/acadetech"
+    android:background="#D8D8D8"
     tools:context=".MainActivityRegister">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -166,5 +166,33 @@
             android:text="@string/txt_fem" />
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSalvarReg"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/txt_save"
+        android:textColor="@color/acadetech"
+        android:textColorHighlight="@color/material_dynamic_primary70"
+        android:textColorHint="@color/acadetech"
+        android:textColorLink="@color/material_dynamic_primary60"
+        app:cornerRadius="5dp"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="658dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Button"
+        android:textColor="@color/acadetech"
+        android:textColorHighlight="@color/material_dynamic_primary80"
+        android:textColorHint="@color/acadetech"
+        android:textColorLink="@color/material_dynamic_primary70"
+        app:cornerRadius="5dp"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="658dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
