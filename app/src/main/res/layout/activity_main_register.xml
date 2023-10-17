@@ -50,8 +50,8 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="304dp"
-        android:layout_height="42dp"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textEmailAddress"
@@ -97,8 +97,8 @@
 
     <EditText
         android:id="@+id/editTextNickname"
-        android:layout_width="301dp"
-        android:layout_height="45dp"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
@@ -110,13 +110,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_pwd_register"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="497dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
-        android:layout_width="298dp"
-        android:layout_height="42dp"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
@@ -125,21 +126,21 @@
 
     <TextView
         android:id="@+id/textViewConfPwd"
-        android:layout_width="117dp"
-        android:layout_height="23dp"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
         android:text="@string/txt_confirm_pwd"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="560dp" />
+        tools:layout_editor_absoluteY="582dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword3"
-        android:layout_width="182dp"
-        android:layout_height="46dp"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteX="96dp"
         tools:layout_editor_absoluteY="560dp" />
 
     <RadioGroup
@@ -151,18 +152,19 @@
         tools:layout_editor_absoluteY="225dp">
 
         <RadioButton
-            android:id="@+id/radioButton9"
+            android:id="@+id/radioButtonMasc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/txt_masc" />
 
         <RadioButton
-            android:id="@+id/radioButton10"
+            android:id="@+id/radioButtonFem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RadioButton" />
+            android:text="@string/txt_fem" />
+
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

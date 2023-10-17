@@ -16,7 +16,7 @@
     <string name="txt_fem">Feminino</string>
     <string name="txt_user1">Usuário:</string>
     <string name="txt_pwd_register">Senha:</string>
-    <string name="txt_confirm_pwd">Confirmar Senha:</string>
+    <string name="txt_confirm_pwd">Confirmar</string>
     <string name="txt_save">Salvar</string>
     <string name="txt_exit">Sair</string>
     <string name="txt_birthdate">Data de nascimento:</string>
