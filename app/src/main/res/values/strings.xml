@@ -21,4 +21,9 @@
     <string name="txt_exit">Sair</string>
     <string name="txt_birthdate">Data de nascimento:</string>
     <string name="txt_cpf">CPF:</string>
+    <string name="txt_confirm_register">Confirmar:</string>
+    <string name="txt_repeat">Repita</string>
+    <string name="txt_a_pwd">a senha:</string>
+    <string name="txt_date">Data</string>
+    <string name="txt_birth">de nascimento:</string>
 </resources>
