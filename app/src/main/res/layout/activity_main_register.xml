@@ -10,13 +10,13 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="4dp"
         android:background="@color/acadetech"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,19 +30,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="38dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="46dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_name"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextName"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEmail1"
         app:layout_constraintEnd_toStartOf="@+id/editTextName"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
 
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="9dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
@@ -57,13 +58,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="42dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_email_register"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGender"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -83,20 +85,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="42dp"
         android:layout_marginEnd="30dp"
+        android:layout_marginBottom="61dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_gender"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBirthdate"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail1" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="13dp"
+        android:layout_marginEnd="11dp"
         android:layout_marginBottom="3dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
@@ -110,11 +113,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="21dp"
+        android:layout_marginBottom="52dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_birth"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNickName"
         app:layout_constraintEnd_toStartOf="@+id/editTextDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBirthdate" />
@@ -123,10 +127,11 @@
         android:id="@+id/textViewBirthdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:layout_marginBottom="7dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_date"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBirth"
         app:layout_constraintStart_toStartOf="@+id/textViewBirth"
         app:layout_constraintTop_toBottomOf="@+id/textViewGender" />
 
@@ -148,11 +153,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
         android:layout_marginEnd="31dp"
+        android:layout_marginBottom="68dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_user1"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPwd1"
         app:layout_constraintEnd_toStartOf="@+id/editTextNickname"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBirth" />
@@ -174,27 +180,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="41dp"
         android:layout_marginEnd="37dp"
+        android:layout_marginBottom="65dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_pwd_register"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRepeat"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNickname" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewNickName" />
 
     <EditText
         android:id="@+id/editTextTextPassword3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
         android:layout_marginEnd="4dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRepeat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewRepeat"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toTopOf="@+id/textViewRepeat" />
 
     <TextView
         android:id="@+id/textViewRepeat"
@@ -202,23 +209,27 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginBottom="108dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_repeat"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPassword3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancelRegister"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword3"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPwd1" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
         android:layout_width="0dp"
         android:layout_height="42dp"
+        android:layout_marginTop="39dp"
         android:layout_marginEnd="14dp"
+        android:layout_marginBottom="41dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textViewGender"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewGender"
-        app:layout_constraintTop_toTopOf="@+id/textViewGender">
+        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress">
 
         <RadioButton
             android:id="@+id/radioButtonMasc"
@@ -262,7 +273,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="49dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="28dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_exit"
@@ -273,6 +284,7 @@
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonSalveReg" />
+        app:layout_constraintStart_toEndOf="@+id/buttonSalveReg"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepeat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
