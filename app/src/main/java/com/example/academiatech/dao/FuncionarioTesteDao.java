@@ -12,7 +12,7 @@ import com.example.academiatech.model.FuncionarioTeste;
 import java.util.List;
 
 @Dao
-public interface FuncionarioTesteDao { //TODO --> REMOVER APÓS TESTE
+public interface FuncionarioTesteDao { //TODO --> REMOVER APÓS TESTE OU REAPROVEITAR CÓDIGO
 
     @Query("SELECT * FROM FuncionarioTeste")
     List<FuncionarioTeste> getFuncionarios();

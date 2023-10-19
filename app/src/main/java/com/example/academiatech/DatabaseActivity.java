@@ -21,7 +21,7 @@ public class DatabaseActivity extends AppCompatActivity {
         FuncionarioTesteDao dao = db.funcionarioTesteDao();
         FuncionarioTeste f = new FuncionarioTeste(1,"teste", new Date(),
                 1000,"teste");
-        dao.insert(f);
+        dao.insert(f); //TODO REFATORAR
     }
 
 }
