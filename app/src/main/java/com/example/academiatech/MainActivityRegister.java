@@ -2,9 +2,11 @@ package com.example.academiatech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RadioButton;
 
 public class MainActivityRegister extends AppCompatActivity {
@@ -19,5 +21,10 @@ public class MainActivityRegister extends AppCompatActivity {
         RadioButton radioButton1 = findViewById(R.id.radioButtonFem);
         ColorStateList colorStateList1 = ColorStateList.valueOf(Color.BLACK);
         radioButton1.setButtonTintList(colorStateList1);
+    }
+
+    public void abrirDatabase( View view ) {
+        Intent intent = new Intent(this, DatabaseActivity.class);
+        startActivity(intent);
     }
 }
