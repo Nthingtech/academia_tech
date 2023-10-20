@@ -5,4 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundmain"
-    tools:context=".MainActivityPrincipaAdmin" />
+    tools:context=".MainActivityPrincipaAdmin">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar3"
+        android:layout_width="409dp"
+        android:layout_height="44dp"
+        android:background="@color/acadetech"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/txt_academia_tech"
+        app:titleCentered="true"
+        app:titleTextColor="@color/design_default_color_background"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
