@@ -19,4 +19,5 @@
         app:titleTextColor="@color/design_default_color_background"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="3dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

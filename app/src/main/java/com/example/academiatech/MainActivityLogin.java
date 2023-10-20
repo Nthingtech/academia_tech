@@ -19,5 +19,10 @@ public class MainActivityLogin extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openActivityPrincipaAdmin(View view) { //TODO PROVISÓRIO - SOMENTE PARA TESTES VIEW REGISTER
+        Intent intent = new Intent(this, MainActivityPrincipaAdmin.class);
+        startActivity(intent);
+    }
+
 
 }
