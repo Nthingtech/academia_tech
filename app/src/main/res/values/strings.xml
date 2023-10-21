@@ -26,4 +26,6 @@
     <string name="txt_a_pwd">a senha:</string>
     <string name="txt_date">Data</string>
     <string name="txt_birth">de nascimento:</string>
+    <string name="txt_meuperfil">Meu Perfil</string>
+    <string name="txt_acesseperfil">Acesse seu perfil</string>
 </resources>
