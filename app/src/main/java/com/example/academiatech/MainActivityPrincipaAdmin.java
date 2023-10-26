@@ -9,6 +9,6 @@ public class MainActivityPrincipaAdmin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_principa_admin);
+        setContentView(R.layout.activity_main_principal_admin);
     }
 }//TODO CONCLUIR CARDVIEW
