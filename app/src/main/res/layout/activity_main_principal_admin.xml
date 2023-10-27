@@ -36,7 +36,20 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"/>
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center_horizontal">
+                
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
     </GridLayout>
 
 </RelativeLayout>
