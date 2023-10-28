@@ -184,28 +184,5 @@
         </androidx.cardview.widget.CardView>
     </GridLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="22dp"
-        android:layout_toStartOf="@+id/button3"
-        android:text="Button"
-        app:cornerRadius="5dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="25dp"
-        android:text="Button" />
-
 </RelativeLayout>
 
