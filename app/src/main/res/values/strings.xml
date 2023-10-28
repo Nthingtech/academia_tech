@@ -29,4 +29,8 @@
     <string name="txt_meuperfil">Meu Perfil</string>
     <string name="txt_acesseperfil">Acesse seu perfil</string>
     <string name="txt_title_view">Menu</string>
+    <string name="txt_fct">FCT</string>
+    <string name="txt_perfil">Perfil</string>
+    <string name="txt_training">Treinos</string>
+    <string name="txt_local">Locais</string>
 </resources>
