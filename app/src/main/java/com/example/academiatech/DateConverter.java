@@ -2,7 +2,6 @@ package com.example.academiatech;
 
 import androidx.room.TypeConverter;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 public class DateConverter {
