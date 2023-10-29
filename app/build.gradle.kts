@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.academiatech"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.academiatech"
@@ -35,6 +35,8 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.room:room-common:2.5.2")
     implementation("androidx.room:room-runtime:2.5.2")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.gms:play-services-ads:22.4.0")
     annotationProcessor("androidx.room:room-compiler:2.5.2")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

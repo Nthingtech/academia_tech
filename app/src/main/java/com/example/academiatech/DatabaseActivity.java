@@ -1,14 +1,13 @@
 package com.example.academiatech;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.academiatech.dao.AppDatabase;
 import com.example.academiatech.dao.FuncionarioTesteDao;
 import com.example.academiatech.model.FuncionarioTeste;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 public class DatabaseActivity extends AppCompatActivity {
