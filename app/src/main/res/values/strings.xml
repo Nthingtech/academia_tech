@@ -33,4 +33,10 @@
     <string name="txt_perfil">Perfil</string>
     <string name="txt_training">Treinos</string>
     <string name="txt_local">Locais</string>
+    <string name="txt_data">Meus Dados</string>
+    <string name="txt_calc_fct">Calculadora de FCT</string>
+    <string name="txt_person_data">Acesse seus Dados Pessoais</string>
+    <string name="txt_explain_fct">Calcule a frequência cardíaca de treinamento do seu aluno</string>
+    <string name="txt_prescription_explain">Elabore as rotinas de treinamento</string>
+    <string name="txt_prescription_principal">Prescrições de Treinos</string>
 </resources>

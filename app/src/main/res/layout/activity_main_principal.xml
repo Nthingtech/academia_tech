@@ -22,6 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:onClick="openActivityLogin"
                 android:padding="10dp"
                 android:src="@drawable/arrowback" />
 
@@ -56,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
                     android:padding="20dp"
-                    android:text="@string/txt_acesseperfil"
+                    android:text="@string/txt_data"
                     android:textColor="@color/acadetech"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -67,7 +68,7 @@
                     android:layout_alignParentBottom="true"
                     android:background="#00000000"
                     android:padding="20dp"
-                    android:text="@string/txt_enter"
+                    android:text="@string/txt_person_data"
                     android:textColor="@color/acadetech"
                     android:textSize="16sp"
                     android:textStyle="bold|italic" />
@@ -81,6 +82,100 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="-5dp"
                 android:src="@drawable/address_card_solid" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/design_default_color_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="20dp"
+                    android:text="@string/txt_calc_fct"
+                    android:textColor="@color/acadetech"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:paddingStart="18dp"
+                    android:text="@string/txt_explain_fct"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/acadetech"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/calculator_solid" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/design_default_color_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="20dp"
+                    android:text="@string/txt_prescription_principal"
+                    android:textColor="@color/acadetech"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:paddingStart="18dp"
+                    android:text="@string/txt_prescription_explain"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/acadetech"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/dumbbell_solid" />
 
         </RelativeLayout>
 
