@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D8D8D8"
-    android:backgroundTint="#D8D8D8"
+    android:background="@color/backgroundmain"
     tools:context=".MainActivityLogin">
 
     <com.google.android.material.textfield.TextInputLayout
