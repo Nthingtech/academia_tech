@@ -18,4 +18,9 @@ public class MainActivityPrincipal extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivityLogin.class);
         startActivity(intent);
     }
+
+    public void openActivityPrescription(View view) {
+        Intent intent = new Intent(this, MainActivityPrescription.class);
+        startActivity(intent);
+    }
 }

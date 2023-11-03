@@ -39,4 +39,7 @@
     <string name="txt_explain_fct">Calcule a frequência cardíaca de treinamento do seu aluno</string>
     <string name="txt_prescription_explain">Elabore as rotinas de treinamento</string>
     <string name="txt_prescription_principal">Prescrições de Treinos</string>
+    <string name="txt_prescription">Prescrições</string>
+    <string name="txt_search_client">Pesquisar por Cliente:</string>
+    <string name="txt_select_client">Selecione o Cliente</string>
 </resources>
