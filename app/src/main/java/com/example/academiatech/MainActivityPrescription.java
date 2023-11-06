@@ -11,4 +11,6 @@ public class MainActivityPrescription extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_prescription);
     }
+
+    //TODO 6:42 MIN
 }
