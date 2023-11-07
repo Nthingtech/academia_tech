@@ -8,38 +8,36 @@
     tools:context=".MainActivityPrescription">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="411dp"
-        android:layout_height="34dp"
-        android:background="@color/acadetech"
-        android:fontFamily="@font/roboto"
-        android:text="@string/txt_prescription"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteY="1dp" />
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="171dp"
-        android:layout_height="34dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_search_client"
         android:textColor="@color/acadetech"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="60dp" />
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="211dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_prescription_begin"
+        android:textColor="@color/acadetech"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="154dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_client"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
         app:boxStrokeColor="@color/acadetech"
         app:cursorColor="@color/acadetech"
         app:hintTextColor="@color/acadetech"
         app:startIconDrawable="@drawable/baseline_person_search_24"
-        tools:layout_editor_absoluteY="100dp">
+        tools:layout_editor_absoluteY="37dp">
 
         <AutoCompleteTextView
             android:id="@+id/act_clients"
@@ -52,6 +50,31 @@
             android:textSize="18sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="@color/acadetech"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_prescription"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:hint="@string/txt_client_button"
+        android:padding="20dp"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="176dp">
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
