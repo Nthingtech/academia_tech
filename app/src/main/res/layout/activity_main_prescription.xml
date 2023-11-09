@@ -10,34 +10,44 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="171dp"
-        android:layout_height="0dp"
+        android:layout_height="20dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_search_client"
         android:textColor="@color/acadetech"
         android:textSize="16sp"
-        tools:layout_editor_absoluteY="28dp" />
+        app:layout_constraintBottom_toTopOf="@+id/til_client"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/til_client" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="211dp"
-        android:layout_height="19dp"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="21dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_prescription_begin"
         android:textColor="@color/acadetech"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tv"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_client" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_client"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
         app:boxStrokeColor="@color/acadetech"
         app:cursorColor="@color/acadetech"
         app:hintTextColor="@color/acadetech"
-        app:startIconDrawable="@drawable/baseline_person_search_24"
-        tools:layout_editor_absoluteY="37dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:startIconDrawable="@drawable/baseline_person_search_24">
 
         <AutoCompleteTextView
             android:id="@+id/act_clients"
@@ -53,8 +63,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:background="@color/acadetech"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_prescription"
@@ -62,19 +73,41 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        android:hint="@string/txt_client_button"
-        android:padding="20dp"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="176dp">
+    <Button
+        android:id="@+id/datePicker"
+        android:layout_width="225dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/datePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/datePicker"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/datePicker"
+        app:layout_constraintEnd_toEndOf="@+id/datePicker"
+        app:srcCompat="@drawable/twotone_calendar_month_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,12 +3,23 @@ package com.example.academiatech;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.datepicker.MaterialDatePicker;
+import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
 import com.google.android.material.textfield.TextInputLayout;
 
+import java.text.MessageFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 public class MainActivityPrescription extends AppCompatActivity {
 
@@ -23,6 +34,27 @@ public class MainActivityPrescription extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_prescription);
+
+        Button button = findViewById(R.id.datePicker);
+
+        TextView textView = findViewById(R.id.tv);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MaterialDatePicker<Long> materialDatePicker = MaterialDatePicker.Builder.datePicker()
+                        .setTitleText("Selecione a data")
+                        .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
+                        .build();
+                materialDatePicker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener<Long>() {
+                    @Override
+                    public void onPositiveButtonClick(Long selection) {
+                        String date = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date(selection));
+                        textView.setText(MessageFormat.format("{0}", date));
+                    }
+                });
+                materialDatePicker.show(getSupportFragmentManager(), "tag");
+            }
+        });
 
         //mock list TODO refatorar
         arrayList_client=new ArrayList<>();
@@ -45,5 +77,4 @@ public class MainActivityPrescription extends AppCompatActivity {
 
     }
 
-    //TODO 6:42 MIN
 }
