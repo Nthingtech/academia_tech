@@ -1,5 +1,7 @@
 package com.example.academiatech.model;
 
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Objects;
 
 public class Prescription {
@@ -8,6 +10,7 @@ public class Prescription {
     private String prescriptionName;
     private Integer totalPrescription;
     private Integer concludedPrescription;
+
 
     public Prescription() {
     }

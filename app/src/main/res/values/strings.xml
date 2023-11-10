@@ -44,4 +44,11 @@
     <string name="txt_select_client">Selecione o Cliente</string>
     <string name="txt_prescription_begin">Data de início da prescrição</string>
     <string name="txt_df_training">Defina os treinos:</string>
+    <string name="nbr_1">1</string>
+    <string name="nbr_2">2</string>
+    <string name="nbr_3">3</string>
+    <string name="nbr_4">4</string>
+    <string name="nbr_5">5</string>
+    <string name="nbr_6">6</string>
+    <string name="nbr_7">7</string>
 </resources>
