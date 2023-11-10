@@ -109,5 +109,15 @@
         app:layout_constraintEnd_toEndOf="@+id/datePicker"
         app:srcCompat="@drawable/twotone_calendar_month_24" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_df_training"
+        android:textColor="@color/acadetech"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="285dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
