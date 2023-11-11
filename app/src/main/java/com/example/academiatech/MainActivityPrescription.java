@@ -50,7 +50,7 @@ public class MainActivityPrescription extends AppCompatActivity {
                     @Override
                     public void onPositiveButtonClick(Long selection) {
                         String date = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date(selection));
-                        textView.setText(MessageFormat.format("{0}", date));
+                        textView.setText(MessageFormat.format("{0}", date)); //TODO instaciar prescription para persistir a data
                     }
                 });
                 materialDatePicker.show(getSupportFragmentManager(), "tag");

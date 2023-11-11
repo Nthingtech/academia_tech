@@ -51,4 +51,7 @@
     <string name="nbr_5">5</string>
     <string name="nbr_6">6</string>
     <string name="nbr_7">7</string>
+    <string name="txt_total_prescription">Total de  treinos da prescrição:</string>
+    <string name="txt_total_training_concluded">Tota de treinos realizados:</string>
+    <string name="txt_cancel">Cancelar</string>
 </resources>
