@@ -34,7 +34,7 @@
             android:layout_alingParentRight="true"
             android:textStyle="normal"
             android:textSize="15dp"/> <!--TODO 10:56 -->
-
+        <!--TODO trocar cancelar po X -->
     </LinearLayout>
 
 </LinearLayout>
