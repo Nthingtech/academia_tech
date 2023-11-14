@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:id="@+id/linear_ll"
+        android:orientation="horizontal">
 
         <ImageView
             android:layout_width="30dp"
@@ -26,15 +28,13 @@
             android:textStyle="bold"
             android:textColor="@color/acadetech" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_cancel"
-            android:textColor="@color/acadetech"
-            android:layout_alingParentRight="true"
-            android:textStyle="normal"
-            android:textSize="15dp"/> <!--TODO 10:56 -->
-        <!--TODO trocar cancelar po X -->
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/acadetech"
+        android:layout_below="@id/linear_ll"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"/>
 
 </LinearLayout>
