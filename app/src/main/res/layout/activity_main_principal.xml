@@ -96,7 +96,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="@color/design_default_color_background">
+                android:background="@color/design_default_color_background"
+                android:onClick="openActivityCalcFct">
 
                 <TextView
                     android:layout_width="wrap_content"

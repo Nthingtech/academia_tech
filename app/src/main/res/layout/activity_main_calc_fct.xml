@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_acad_tech2"
+    android:padding="0dp"
+    tools:context=".MainActivityPrescription">
+
+    <Button
+        android:id="@+id/buttonCancelRegister2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_cancel"
+        android:textColor="@color/acadetech"
+        android:textColorHighlight="@color/material_dynamic_primary80"
+        android:textColorHint="@color/acadetech"
+        android:textColorLink="@color/material_dynamic_primary70"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelRegister3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <Button
+        android:id="@+id/buttonCancelRegister3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_save"
+        android:textColor="@color/acadetech"
+        android:textColorHighlight="@color/material_dynamic_primary80"
+        android:textColorHint="@color/acadetech"
+        android:textColorLink="@color/material_dynamic_primary70"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCancelRegister2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_fct_intesity"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        app:boxStrokeColor="@color/acadetech"
+        app:cursorColor="@color/acadetech"
+        app:hintTextColor="@color/acadetech"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:startIconDrawable="@drawable/baseline_local_fire_department_24">
+
+        <AutoCompleteTextView
+            android:id="@+id/act_clients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="@string/txt_intensity"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="17dp"
+        android:background="@color/acadetech"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_calc_fct"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="268dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_fct_selec"
+        android:textColor="@color/acadetech"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/til_fct_intesity"
+        app:layout_constraintStart_toStartOf="@+id/til_fct_intesity"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="291dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txt_freq1"
+        android:inputType="number"
+        android:outlineAmbientShadowColor="@color/acadetech"
+        android:outlineSpotShadowColor="@color/acadetech"
+        android:shadowColor="@color/acadetech"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancelRegister2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_fct_intesity" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="291dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txt_freq2"
+        android:inputType="number"
+        android:outlineAmbientShadowColor="@color/acadetech"
+        android:outlineSpotShadowColor="@color/acadetech"
+        android:shadowColor="@color/acadetech"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancelRegister2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_fct_intesity"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginBottom="291dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/txt_freq3"
+        android:inputType="number"
+        android:outlineAmbientShadowColor="@color/acadetech"
+        android:outlineSpotShadowColor="@color/acadetech"
+        android:shadowColor="@color/acadetech"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancelRegister2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_fct_intesity"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="2">
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_fct_rest"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_fctmin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_fctMax"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

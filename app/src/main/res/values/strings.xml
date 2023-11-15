@@ -55,4 +55,12 @@
     <string name="txt_total_training_concluded">Tota de treinos realizados:</string>
     <string name="txt_cancel">Cancelar</string>
     <string name="txt_alter">Editar Perfil</string>
+    <string name="txt_fct_selec">Selecione a intensidade do treino</string>
+    <string name="txt_intensity">Intensidade do treino</string>
+    <string name="txt_freq1">1ª Freq.</string>
+    <string name="txt_freq2">2ª Freq.</string>
+    <string name="txt_freq3">3ª Freq.</string>
+    <string name="txt_fct_rest">Média FCT Repouso:</string>
+    <string name="txt_fctMax">Frequência cardíaca mínima de treino:</string>
+    <string name="txt_fctmin">Frequência cardíaca mínima de treino:</string>
 </resources>
