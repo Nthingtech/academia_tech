@@ -40,5 +40,6 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.cardview:cardview:1.0.0")
-    implementation("com.google.android.material:material:1.10.0")//teste para dropdown prescription
+    implementation("com.google.android.material:material:1.10.0")//dropdown prescription
+    implementation("de.hdodenhof:circleimageview:3.1.0")//Circle view change photo
 }

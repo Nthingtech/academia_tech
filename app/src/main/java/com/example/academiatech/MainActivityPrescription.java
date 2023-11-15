@@ -44,7 +44,7 @@ public class MainActivityPrescription extends AppCompatActivity {
                 MaterialDatePicker<Long> materialDatePicker = MaterialDatePicker.Builder.datePicker()
                         .setTitleText("Selecione a data")
                         .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
-                        .setTheme(R.style.MyDatePickerTheme) //TODO teste de cor
+                        .setTheme(R.style.MyDatePickerTheme)
                         .build();
                 materialDatePicker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener<Long>() {
                     @Override
