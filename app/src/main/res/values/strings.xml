@@ -54,4 +54,5 @@
     <string name="txt_total_prescription">Total de  treinos da prescrição:</string>
     <string name="txt_total_training_concluded">Tota de treinos realizados:</string>
     <string name="txt_cancel">Cancelar</string>
+    <string name="txt_alter">Editar Perfil</string>
 </resources>

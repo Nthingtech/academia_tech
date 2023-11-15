@@ -35,9 +35,9 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/acadetech"
-            android:layout_marginTop="10dp"/>
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/acadetech" />
 
     </LinearLayout>
 
@@ -58,13 +58,177 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Temporário - trocar"
+            android:text="@string/txt_name"
             android:fontFamily="@font/roboto_italic"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:layout_marginLeft="5dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Temp. -> depois trocar"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="18dp" />
+
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/material_dynamic_neutral90" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_italic"
+            android:text="@string/txt_email_register"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Temp. -> depois trocar"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/material_dynamic_neutral90" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_groups"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_italic"
+            android:text="@string/txt_gender"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Temp. -> depois trocar"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/material_dynamic_neutral90" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_badge_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_italic"
+            android:text="@string/txt_user1"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Temp. -> depois trocar"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/material_dynamic_neutral90" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/txt_alter"
+            android:gravity="center"
+            android:textColor="@color/acadetech"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/baseline_edit"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="-10dp"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
