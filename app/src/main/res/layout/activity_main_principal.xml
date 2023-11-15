@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -50,7 +49,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="@color/design_default_color_background">
+                android:background="@color/design_default_color_background"
+                android:onClick="openActivityProfile">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -135,8 +135,7 @@
         <RelativeLayout
             android:id="@+id/cardPrescription"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:onClick="openActivityPrescription">
+            android:layout_height="170dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -145,7 +144,8 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
-                android:background="@color/design_default_color_background">
+                android:background="@color/design_default_color_background"
+                android:onClick="openActivityPrescription">
 
                 <TextView
                     android:layout_width="wrap_content"

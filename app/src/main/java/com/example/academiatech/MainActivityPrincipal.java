@@ -1,10 +1,10 @@
 package com.example.academiatech;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivityPrincipal extends AppCompatActivity {
 
@@ -21,6 +21,11 @@ public class MainActivityPrincipal extends AppCompatActivity {
 
     public void openActivityPrescription(View view) {
         Intent intent = new Intent(this, MainActivityPrescription.class);
+        startActivity(intent);
+    }
+
+    public void openActivityProfile(View view) {
+        Intent intent = new Intent(this, MainActivityProfile.class);
         startActivity(intent);
     }
 }

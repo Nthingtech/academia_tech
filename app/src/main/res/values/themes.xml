@@ -6,7 +6,7 @@
         <item name="android:statusBarColor">@color/acadetech</item>
     </style>
 
-    <style name="MyDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar"> <!-- TODO teste de troca de cor -->
+    <style name="MyDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
         <item name="colorOnPrimary">@color/acadetech</item>
         <item name="colorPrimary">@color/acadetech</item>
     </style>
