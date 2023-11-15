@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D8D8D8"
+    android:background="@color/background_acad_tech2"
     tools:context=".MainActivityRegister">
 
     <com.google.android.material.appbar.MaterialToolbar
