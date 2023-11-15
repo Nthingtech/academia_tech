@@ -27,11 +27,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Texto temporário"
+            android:layout_marginTop="8dp"
+            android:text="Selecione a foto de peril"
             android:textColor="@color/acadetech"
             android:textSize="20dp"
-            android:layout_marginTop="8dp"
-            android:textStyle="bold"/> <!--TODO TEMPORALY TEXT-->
+            android:textStyle="bold" /> <!--TODO TEMPORALY TEXT-->
 
         <View
             android:layout_width="match_parent"
