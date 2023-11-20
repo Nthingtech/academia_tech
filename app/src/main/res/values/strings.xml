@@ -63,4 +63,5 @@
     <string name="txt_fct_rest">Média FCT Repouso:</string>
     <string name="txt_fctMax">Frequência cardíaca mínima de treino:</string>
     <string name="txt_fctmin">Frequência cardíaca mínima de treino:</string>
+    <string name="txt_registrer_exercise">Cadastrar novo exercício</string>
 </resources>

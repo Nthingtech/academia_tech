@@ -7,4 +7,6 @@
     android:background="@color/background_acad_tech2"
     tools:context=".MainActivityTraining">
 
+    <!--TODO -->
+
 </ScrollView>

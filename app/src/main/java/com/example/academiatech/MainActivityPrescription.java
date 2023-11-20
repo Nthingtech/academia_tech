@@ -1,5 +1,6 @@
 package com.example.academiatech;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -34,6 +35,7 @@ public class MainActivityPrescription extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_prescription);
+
 
         Button button = findViewById(R.id.datePicker);
 
@@ -85,8 +87,11 @@ public class MainActivityPrescription extends AppCompatActivity {
                 return false;
             }
         });
+    }
 
-
+    public void openActivityRegisterExercise(View view) {
+        Intent intent = new Intent(this, MainActivityRegisterExercise.class);
+        startActivity(intent);
     }
 
 }
