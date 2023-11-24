@@ -12,9 +12,9 @@
         android:id="@+id/editTextText2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="37dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="14dp"
         android:ems="10"
         android:hint="@string/txt_exercise"
         android:inputType="text"
@@ -28,8 +28,33 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="66dp"
-        android:numeric="integer"
+        android:inputType="number"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="@string/txt_machine_number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:hint="@string/txt_muscle_group"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
