@@ -65,6 +65,7 @@
     <string name="txt_fctmin">Frequência cardíaca mínima de treino:</string>
     <string name="txt_registrer_exercise">Cadastrar novo exercício</string>
     <string name="txt_exercise">Exercício</string>
-    <string name="txt_machine_number">Número do aparelho</string>
+    <string name="txt_machine_number">N° apr.</string>
     <string name="txt_muscle_group">Grupo Muscular</string>
+    <string name="txt_video_uri">Link do vídeo</string>
 </resources>

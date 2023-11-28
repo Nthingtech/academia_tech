@@ -13,48 +13,105 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="26dp"
         android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:hint="@string/txt_exercise"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/idExerciseView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginBottom="35dp"
         android:inputType="number"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:hint="@string/txt_machine_number"
         android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextText3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:hint="@string/txt_muscle_group"
         android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/acadetech"
+        android:ems="10"
+        android:hint="@string/txt_video_uri"
+        android:inputType="textUri"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/buttonSaveExercise"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:onClick="abrirDatabase"
+        android:text="@string/txt_save"
+        android:textColor="@color/acadetech"
+        android:textColorHighlight="@color/material_dynamic_primary70"
+        android:textColorHint="@color/acadetech"
+        android:textColorLink="@color/material_dynamic_primary60"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCancelExercise"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_exit"
+        android:textColor="@color/acadetech"
+        android:textColorHighlight="@color/material_dynamic_primary80"
+        android:textColorHint="@color/acadetech"
+        android:textColorLink="@color/material_dynamic_primary70"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
