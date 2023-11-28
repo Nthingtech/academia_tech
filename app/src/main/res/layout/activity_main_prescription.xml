@@ -170,6 +170,7 @@
             android:layout_margin="8dp"
             android:layout_weight="5"
             android:backgroundTint="@color/acadetech"
+            android:onClick="openActivityMainTraining"
             android:paddingLeft="0dp"
             android:paddingTop="0dp"
             android:paddingEnd="0dp"

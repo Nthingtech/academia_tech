@@ -94,4 +94,9 @@ public class MainActivityPrescription extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openActivityMainTraining(View view) {
+        Intent intent = new Intent(this, MainActivityTraining.class);
+        startActivity(intent); //TODO somente para teste
+    }
+
 }
