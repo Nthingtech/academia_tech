@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRecyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_acad_tech2"
@@ -10,12 +11,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="530dp"
+        android:layout_height="550dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/button11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button11"
@@ -52,7 +52,7 @@
         android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="35dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
         app:backgroundTint="@color/acadetech"
@@ -61,19 +61,4 @@
         app:layout_constraintStart_toEndOf="@+id/button11"
         app:srcCompat="@drawable/baseline_fitness_center_24" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="4dp"
-        android:background="@color/acadetech"
-        android:backgroundTint="@color/acadetech"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textSize="19sp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

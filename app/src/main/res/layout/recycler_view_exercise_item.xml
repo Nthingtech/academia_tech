@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="236dp">
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txt_exercise"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="9dp"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txt_series"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="9dp"
+                tools:layout_editor_absoluteY="58dp" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal2"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txt_quantity"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="58dp" />
+
+            <EditText
+                android:id="@+id/editTextNumber4"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txt_rest"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="294dp"
+                tools:layout_editor_absoluteY="58dp" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal3"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/txt_weight"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="9dp"
+                tools:layout_editor_absoluteY="134dp" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/txt_note"
+                android:inputType="textMultiLine"
+                tools:layout_editor_absoluteX="154dp"
+                tools:layout_editor_absoluteY="134dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
