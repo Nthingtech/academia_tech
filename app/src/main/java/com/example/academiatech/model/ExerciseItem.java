@@ -16,6 +16,8 @@ public class ExerciseItem {
     private Integer concluded;
     private Integer quantityNumber;
 
+    private int trainingId;
+
     public ExerciseItem() {
     }
 
