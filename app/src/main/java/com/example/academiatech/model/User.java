@@ -1,11 +1,18 @@
 package com.example.academiatech.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import com.example.academiatech.model.enums.Gender;
 import com.example.academiatech.model.enums.TypeUser;
 
 import java.util.Objects;
 
+
+@Entity
 public class User {
+
+    @PrimaryKey(autoGenerate = true)
     private Long id;
     private String name;
     private String email;

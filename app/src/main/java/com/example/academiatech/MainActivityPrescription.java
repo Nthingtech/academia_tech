@@ -70,7 +70,7 @@ public class MainActivityPrescription extends AppCompatActivity {
         arrayList_client.add("Naira Galvão Tetsuo");
 
         til_client=(TextInputLayout) findViewById(R.id.til_client);
-        act_clients=(AutoCompleteTextView) findViewById(R.id.act_clients);
+        act_clients=(AutoCompleteTextView) findViewById(R.id.act_client);
 
         arrayAdapter_client=new ArrayAdapter<>(getApplicationContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,arrayList_client);
         act_clients.setAdapter(arrayAdapter_client);

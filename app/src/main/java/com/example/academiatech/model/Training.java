@@ -1,17 +1,23 @@
 package com.example.academiatech.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import com.example.academiatech.model.enums.Status;
 
 import java.time.Instant;
 import java.util.Objects;
 
+@Entity
 public class Training {
 
+    @PrimaryKey(autoGenerate = true)
     private Long id;
     private String trainingName;
     private Integer totalTraining;
     private Instant concludeAt = Instant.now();
     private Status status;
+    private int prescriptionId;
 
     public Training() {
     }
