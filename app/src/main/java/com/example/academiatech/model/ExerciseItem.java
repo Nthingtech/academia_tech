@@ -18,6 +18,8 @@ public class ExerciseItem {
 
     private int trainingId;
 
+    private int exerciseId;
+
     public ExerciseItem() {
     }
 
