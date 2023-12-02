@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.academiatech.dao.AppDatabase;
+import com.example.academiatech.db.AppDatabase;
 import com.example.academiatech.dao.FuncionarioTesteDao;
 import com.example.academiatech.model.FuncionarioTeste;
 

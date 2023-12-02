@@ -1,4 +1,4 @@
-package com.example.academiatech.dao;
+package com.example.academiatech.db;
 
 import android.content.Context;
 
@@ -9,6 +9,7 @@ import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
 import com.example.academiatech.DateConverter;
+import com.example.academiatech.dao.FuncionarioTesteDao;
 import com.example.academiatech.model.Exercise;
 import com.example.academiatech.model.ExerciseItem;
 import com.example.academiatech.model.TrainingExerciseItem;
@@ -24,7 +25,7 @@ ExerciseItem.class, UserPrescription.class, PrescriptionTraining.class, Training
 @TypeConverters(DateConverter.class)
 abstract public class AppDatabase extends RoomDatabase {
     private static AppDatabase sInstance;
-    public static final String DATABASE_NAME="teste.db";
+    public static final String DATABASE_NAME="acadtech.db";
     public abstract FuncionarioTesteDao funcionarioTesteDao();
     private final MutableLiveData<Boolean> mIsDatabaseCreated = new MutableLiveData<>();
     public static AppDatabase getInstance(final Context context) {
