@@ -1,4 +1,4 @@
-package com.example.academiatech.dao;
+package com.example.academiatech.db;
 
 import android.content.Context;
 
@@ -9,22 +9,42 @@ import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
 import com.example.academiatech.DateConverter;
+import com.example.academiatech.dao.ExerciseDao;
+import com.example.academiatech.dao.ExerciseExerciseItemDao;
+import com.example.academiatech.dao.ExerciseItemDao;
+import com.example.academiatech.dao.FuncionarioTesteDao;
+import com.example.academiatech.dao.PrescriptionDao;
+import com.example.academiatech.dao.PrescriptionTrainingDao;
+import com.example.academiatech.dao.TrainingDao;
+import com.example.academiatech.dao.TrainingExerciseItemDao;
+import com.example.academiatech.dao.UserDao;
+import com.example.academiatech.dao.UserPrescriptionDao;
 import com.example.academiatech.model.Exercise;
 import com.example.academiatech.model.ExerciseItem;
-import com.example.academiatech.model.ExerciseItemTraining;
+import com.example.academiatech.model.FuncionarioTeste;
 import com.example.academiatech.model.Prescription;
 import com.example.academiatech.model.PrescriptionTraining;
 import com.example.academiatech.model.Training;
+import com.example.academiatech.model.TrainingExerciseItem;
 import com.example.academiatech.model.User;
 import com.example.academiatech.model.UserPrescription;
 
 @Database(entities = {User.class, Prescription.class, Training.class, Exercise.class,
-ExerciseItem.class, UserPrescription.class, PrescriptionTraining.class, ExerciseItemTraining.class}, version=1)
+ExerciseItem.class, UserPrescription.class, PrescriptionTraining.class, TrainingExerciseItem.class, FuncionarioTeste.class}, version=1)
 @TypeConverters(DateConverter.class)
 abstract public class AppDatabase extends RoomDatabase {
     private static AppDatabase sInstance;
     public static final String DATABASE_NAME="teste.db";
     public abstract FuncionarioTesteDao funcionarioTesteDao();
+    public abstract UserDao userDao();
+    public abstract PrescriptionDao prescriptionDao();
+    public abstract TrainingDao trainingDao();
+    public abstract ExerciseDao exerciseDao();
+    public abstract ExerciseItemDao exerciseItemDao();
+    public abstract UserPrescriptionDao userPrescriptionDao();
+    public abstract PrescriptionTrainingDao prescriptionTrainingDao();
+    public abstract TrainingExerciseItemDao trainingExerciseItemDao();
+    public abstract ExerciseExerciseItemDao exerciseExerciseItemDao();
     private final MutableLiveData<Boolean> mIsDatabaseCreated = new MutableLiveData<>();
     public static AppDatabase getInstance(final Context context) {
         if ( sInstance == null ) {
