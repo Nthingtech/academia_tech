@@ -1,9 +1,14 @@
 package com.example.academiatech.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Objects;
 
+@Entity
 public class Exercise {
 
+    @PrimaryKey(autoGenerate = true)
     private Long id;
     private String exerciseName;
     private String machineNumber;

@@ -23,7 +23,7 @@
         app:startIconDrawable="@drawable/baseline_local_fire_department_24">
 
         <AutoCompleteTextView
-            android:id="@+id/act_clients"
+            android:id="@+id/act_exercise_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

@@ -68,4 +68,9 @@
     <string name="txt_machine_number">N° apr.</string>
     <string name="txt_muscle_group">Grupo Muscular</string>
     <string name="txt_video_uri">Link do vídeo</string>
+    <string name="txt_series">Séries</string>
+    <string name="txt_quantity">Quantidade</string>
+    <string name="txt_rest">Intervalo</string>
+    <string name="txt_weight">Carga</string>
+    <string name="txt_note">Observação</string>
 </resources>

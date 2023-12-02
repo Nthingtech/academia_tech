@@ -1,15 +1,24 @@
 package com.example.academiatech.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Objects;
 
+@Entity
 public class ExerciseItem {
 
+    @PrimaryKey(autoGenerate = true)
     private Long id;
     private Integer seriesNumber;
     private Integer measurementType;
     private Integer rest;
     private Integer concluded;
     private Integer quantityNumber;
+
+    private int trainingId;
+
+    private int exerciseId;
 
     public ExerciseItem() {
     }

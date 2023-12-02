@@ -1,13 +1,19 @@
 package com.example.academiatech.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.Objects;
 
+@Entity
 public class Prescription {
 
+    @PrimaryKey(autoGenerate = true)
     private Long id;
     private String prescriptionName;
     private Integer totalPrescription;
     private Integer concludedPrescription;
+    private int userId;
 
 
     public Prescription() {
