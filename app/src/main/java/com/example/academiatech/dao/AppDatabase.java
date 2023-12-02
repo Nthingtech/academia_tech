@@ -11,7 +11,7 @@ import androidx.room.TypeConverters;
 import com.example.academiatech.DateConverter;
 import com.example.academiatech.model.Exercise;
 import com.example.academiatech.model.ExerciseItem;
-import com.example.academiatech.model.ExerciseItemTraining;
+import com.example.academiatech.model.TrainingExerciseItem;
 import com.example.academiatech.model.FuncionarioTeste;
 import com.example.academiatech.model.Prescription;
 import com.example.academiatech.model.PrescriptionTraining;
@@ -20,7 +20,7 @@ import com.example.academiatech.model.User;
 import com.example.academiatech.model.UserPrescription;
 
 @Database(entities = {User.class, Prescription.class, Training.class, Exercise.class,
-ExerciseItem.class, UserPrescription.class, PrescriptionTraining.class, ExerciseItemTraining.class, FuncionarioTeste.class}, version=1)
+ExerciseItem.class, UserPrescription.class, PrescriptionTraining.class, TrainingExerciseItem.class, FuncionarioTeste.class}, version=1)
 @TypeConverters(DateConverter.class)
 abstract public class AppDatabase extends RoomDatabase {
     private static AppDatabase sInstance;

@@ -5,7 +5,7 @@ import androidx.room.Relation;
 
 import java.util.List;
 
-public class ExerciseItemTraining {
+public class TrainingExerciseItem {
 
     @Embedded
     public Training training;
