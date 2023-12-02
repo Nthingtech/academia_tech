@@ -84,6 +84,8 @@ public class MainActivityRegister extends AppCompatActivity {
 
         User u = new User(name, email, birthdate, nickname, password, passwordRepeat);
         userDao.insertUser(u);
+
+        finish();
     }
 
 
