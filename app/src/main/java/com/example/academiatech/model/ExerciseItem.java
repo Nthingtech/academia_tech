@@ -80,6 +80,22 @@ public class ExerciseItem {
         this.quantityNumber = quantityNumber;
     }
 
+    public int getTrainingId() {
+        return trainingId;
+    }
+
+    public void setTrainingId(int trainingId) {
+        this.trainingId = trainingId;
+    }
+
+    public int getExerciseId() {
+        return exerciseId;
+    }
+
+    public void setExerciseId(int exerciseId) {
+        this.exerciseId = exerciseId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

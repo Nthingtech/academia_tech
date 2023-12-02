@@ -35,12 +35,12 @@
         android:text="@string/txt_name"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewEmail1"
-        app:layout_constraintEnd_toStartOf="@+id/editTextName"
+        app:layout_constraintEnd_toStartOf="@+id/registerName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/registerName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="101dp"
@@ -66,12 +66,12 @@
         android:text="@string/txt_email_register"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewGender"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/registerEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/registerEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
@@ -81,7 +81,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewEmail1"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintTop_toBottomOf="@+id/registerName" />
 
     <TextView
         android:id="@+id/textViewGender"
@@ -99,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewEmail1" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/registerBirthdate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -107,7 +107,7 @@
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNickname"
+        app:layout_constraintBottom_toTopOf="@+id/registerNickName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewBirthdate" />
 
@@ -133,12 +133,12 @@
         android:text="@string/txt_date"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewBirth"
-        app:layout_constraintEnd_toStartOf="@+id/editTextDate"
+        app:layout_constraintEnd_toStartOf="@+id/registerBirthdate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewGender" />
 
     <EditText
-        android:id="@+id/editTextNickname"
+        android:id="@+id/registerNickName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="13dp"
@@ -146,7 +146,7 @@
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/registerPwd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewNickName" />
 
@@ -161,12 +161,12 @@
         android:text="@string/txt_user1"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewPwd1"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNickname"
+        app:layout_constraintEnd_toStartOf="@+id/registerNickName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBirth" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/registerPwd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
@@ -188,12 +188,12 @@
         android:text="@string/txt_pwd_register"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewRepeat"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toStartOf="@+id/registerPwd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNickName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/registerRepeatPwd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
@@ -202,10 +202,10 @@
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCancelRegister"
+        app:layout_constraintBottom_toTopOf="@+id/registerExit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewRepeat"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/registerPwd" />
 
     <TextView
         android:id="@+id/textViewRepeat"
@@ -217,8 +217,8 @@
         android:fontFamily="@font/roboto"
         android:text="@string/txt_repeat"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCancelRegister"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword3"
+        app:layout_constraintBottom_toTopOf="@+id/registerExit"
+        app:layout_constraintEnd_toStartOf="@+id/registerRepeatPwd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPwd1" />
 
@@ -230,7 +230,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="67dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintBottom_toBottomOf="@+id/registerBirthdate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewGender"
         app:layout_constraintTop_toTopOf="@+id/textViewEmail1">
@@ -253,7 +253,7 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/buttonSalveReg"
+        android:id="@+id/registerSave"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="61dp"
@@ -261,7 +261,7 @@
         android:layout_marginBottom="25dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
-        android:onClick="abrirDatabase"
+        android:onClick="register"
         android:text="@string/txt_save"
         android:textColor="@color/acadetech"
         android:textColorHighlight="@color/material_dynamic_primary70"
@@ -269,11 +269,11 @@
         android:textColorLink="@color/material_dynamic_primary60"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonCancelRegister"
+        app:layout_constraintEnd_toStartOf="@+id/registerExit"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonCancelRegister"
+        android:id="@+id/registerExit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="49dp"
@@ -288,7 +288,7 @@
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonSalveReg"
+        app:layout_constraintStart_toEndOf="@+id/registerSave"
         app:layout_constraintTop_toBottomOf="@+id/textViewRepeat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

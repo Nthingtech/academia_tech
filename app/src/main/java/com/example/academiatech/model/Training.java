@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 import com.example.academiatech.model.enums.Status;
 
-import java.time.Instant;
+import java.util.Date;
 import java.util.Objects;
 
 @Entity
@@ -15,14 +15,14 @@ public class Training {
     private Long id;
     private String trainingName;
     private Integer totalTraining;
-    private Instant concludeAt = Instant.now();
+    private Date concludeAt;
     private Status status;
     private int prescriptionId;
 
     public Training() {
     }
 
-    public Training(Long id, String trainingName, Integer totalTraining, Instant concludeAt, Status status) {
+    public Training(Long id, String trainingName, Integer totalTraining, Date concludeAt, Status status) {
         this.id = id;
         this.trainingName = trainingName;
         this.totalTraining = totalTraining;
@@ -54,11 +54,11 @@ public class Training {
         this.totalTraining = totalTraining;
     }
 
-    public Instant getConcludeAt() {
+    public Date getConcludeAt() {
         return concludeAt;
     }
 
-    public void setConcludeAt(Instant concludeAt) {
+    public void setConcludeAt(Date concludeAt) {
         this.concludeAt = concludeAt;
     }
 
@@ -68,6 +68,14 @@ public class Training {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public int getPrescriptionId() {
+        return prescriptionId;
+    }
+
+    public void setPrescriptionId(int prescriptionId) {
+        this.prescriptionId = prescriptionId;
     }
 
     @Override

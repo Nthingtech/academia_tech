@@ -4,8 +4,8 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import com.example.academiatech.model.enums.Gender;
-import com.example.academiatech.model.enums.TypeUser;
 
+import java.util.Date;
 import java.util.Objects;
 
 
@@ -17,24 +17,34 @@ public class User {
     private String name;
     private String email;
     private Gender gender;
-    private TypeUser typeUser;
+    private Date birthdate;
     private String nickName;
     private String password;
-    private String imageUser;
+    private String passwordRepeat;
 
     public User() {
     }
 
-    public User(Long id, String name, String email, Gender gender, TypeUser typeUser, String nickName, String password, String imageUser) {
+    public User(Long id, String name, String email, Gender gender,Date birthdate, String nickName, String password, String passwordRepeat) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.gender = gender;
-        this.typeUser = typeUser;
+        this.birthdate = birthdate;
         this.nickName = nickName;
         this.password = password;
-        this.imageUser = imageUser;
+        this.passwordRepeat = passwordRepeat;
     }
+
+    public User(String name, String email, Date birthdate, String nickname, String password, String passwordRepeat) {
+        this.name = name;
+        this.email = email;
+        this.birthdate = birthdate;
+        this.nickName = nickname;
+        this.password = password;
+        this.passwordRepeat = passwordRepeat;
+    }
+
 
     public Long getId() {
         return id;
@@ -68,12 +78,12 @@ public class User {
         this.gender = gender;
     }
 
-    public TypeUser getTypeUser() {
-        return typeUser;
+    public Date getBirthdate() {
+        return birthdate;
     }
 
-    public void setTypeUser(TypeUser typeUser) {
-        this.typeUser = typeUser;
+    public void setBirthdate(Date birthdate) {
+        this.birthdate = birthdate;
     }
 
     public String getNickName() {
@@ -92,12 +102,12 @@ public class User {
         this.password = password;
     }
 
-    public String getImageUser() {
-        return imageUser;
+    public String getPasswordRepeat() {
+        return passwordRepeat;
     }
 
-    public void setImageUser(String imageUser) {
-        this.imageUser = imageUser;
+    public void setPasswordRepeat(String imageUser) {
+        this.passwordRepeat = passwordRepeat;
     }
 
     @Override
@@ -120,10 +130,9 @@ public class User {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", gender=" + gender +
-                ", typeUser=" + typeUser +
                 ", nickName='" + nickName + '\'' +
                 ", password='" + password + '\'' +
-                ", imageUser='" + imageUser + '\'' +
+                ", passwordRepeat='" + passwordRepeat + '\'' +
                 '}';
     }
 }

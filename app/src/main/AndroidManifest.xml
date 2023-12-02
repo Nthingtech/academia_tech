@@ -31,9 +31,6 @@
             android:name=".MainActivityPrincipal"
             android:exported="false" />
         <activity
-            android:name=".DatabaseActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivityRegister"
             android:exported="false" />
         <activity
