@@ -28,4 +28,9 @@ public class MainActivityPrincipal extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivityCalcFct.class);
         startActivity(intent);
     }
+
+    public void openActivityListClient(View view) {
+        Intent intent = new Intent(this, MainActivityListaClient.class);
+        startActivity(intent);
+    }
 }

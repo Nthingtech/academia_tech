@@ -25,6 +25,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="245dp"
                 android:backgroundTint="@color/acadetech"
+                android:onClick="openActivityListClient"
                 android:text="@string/txt_clients"
                 app:cornerRadius="5dp" />
 
