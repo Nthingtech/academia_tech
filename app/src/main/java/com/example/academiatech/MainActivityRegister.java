@@ -1,5 +1,6 @@
 package com.example.academiatech;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -57,6 +58,11 @@ public class MainActivityRegister extends AppCompatActivity {
         User u = new User(name, email, gender, birthdate, nickname);
         userDao.insertUser(u);
 
+    }
+
+    public void openActivityPrincipal(View view) {
+        Intent intent = new Intent(this, MainActivityPrincipal.class);
+        startActivity(intent);
     }
 
 

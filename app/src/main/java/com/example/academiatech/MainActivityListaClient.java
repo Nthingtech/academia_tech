@@ -1,6 +1,8 @@
 package com.example.academiatech;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -23,7 +25,7 @@ public class MainActivityListaClient extends AppCompatActivity {
         AppDatabase db = AppDatabase.getInstance(this);
         UserDao userDao = db.userDao();
         List<User> users = userDao.getUsers();
-        recyclerView.setAdapter(new UserAdapter(users, this));
+        recyclerView.setAdapter(new UserAdapter(users, this, userDao));
         RecyclerView.LayoutManager layoutManager =
                 new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,
                         false);
@@ -34,6 +36,11 @@ public class MainActivityListaClient extends AppCompatActivity {
                 DividerItemDecoration.VERTICAL
         );
         recyclerView.addItemDecoration(dividerItemDecoration);
+    }
+
+    public void openActivityPrincipal(View view) {
+        Intent intent = new Intent(this, MainActivityPrincipal.class);
+        startActivity(intent);
     }
 
 }

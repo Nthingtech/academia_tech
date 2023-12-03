@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.academiatech.dao.UserDao;
 import com.example.academiatech.model.User;
 
 import java.text.SimpleDateFormat;
@@ -16,10 +17,14 @@ public class UserAdapter extends RecyclerView.Adapter {
 
     private List<User> users;
     private Context context;
+    private UserDao userDao;
 
-    public UserAdapter(List<User> users, Context context) {
+
+
+    public UserAdapter(List<User> users, Context context, UserDao userDao) {
         this.users = users;
         this.context = context;
+        this.userDao = userDao;
     }
 
     @Override
@@ -40,6 +45,19 @@ public class UserAdapter extends RecyclerView.Adapter {
         userViewHolder.birthdate.setText(dateFormat.format(user.getBirthdate()));
         userViewHolder.email.setText(user.getEmail());
         userViewHolder.nickname.setText(user.getNickName());
+
+        userViewHolder.deleteClient.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                int adapterPosition = holder.getAdapterPosition();
+                userDao.deleteUser(user); // delete the user from the database
+                users.remove(adapterPosition); // remove the user from the list
+                notifyItemRemoved(adapterPosition); // notify the adapter about the removed item
+
+                // update the list of users
+                users = userDao.getUsers();
+
+            }
+        });
 
 
     }

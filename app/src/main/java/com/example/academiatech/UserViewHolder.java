@@ -1,6 +1,7 @@
 package com.example.academiatech;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +15,8 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
     final TextView email;
     final TextView nickname;
 
+    Button deleteClient;
+
     public UserViewHolder(View itemView) {
         super(itemView);
         id = itemView.findViewById(R.id.item_id);
@@ -22,5 +25,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         birthdate = itemView.findViewById(R.id.item_birthdate);
         email = itemView.findViewById(R.id.item_email);
         nickname = itemView.findViewById(R.id.item_nickName);
+
+        deleteClient = itemView.findViewById(R.id.deleteClient);
     }
 }

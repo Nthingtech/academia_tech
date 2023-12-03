@@ -122,4 +122,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/item_email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/item_email" />
+
+    <Button
+        android:id="@+id/deleteClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="@color/acadetech"
+        android:text="@string/txt_delete"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
