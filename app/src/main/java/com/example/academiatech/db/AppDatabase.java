@@ -27,26 +27,17 @@ import com.example.academiatech.model.Training;
 import com.example.academiatech.model.User;
 
 @Database(entities = {User.class, Prescription.class, Training.class, Exercise.class,
-ExerciseItem.class, FuncionarioTeste.class}, version=1)
+        ExerciseItem.class, FuncionarioTeste.class}, version = 1)
 @TypeConverters(DateConverter.class)
 abstract public class AppDatabase extends RoomDatabase {
+    public static final String DATABASE_NAME = "acad.db";
     private static AppDatabase sInstance;
-    public static final String DATABASE_NAME="acad.db";
-    public abstract FuncionarioTesteDao funcionarioTesteDao();
-    public abstract UserDao userDao();
-    public abstract PrescriptionDao prescriptionDao();
-    public abstract TrainingDao trainingDao();
-    public abstract ExerciseDao exerciseDao();
-    public abstract ExerciseItemDao exerciseItemDao();
-    public abstract UserPrescriptionDao userPrescriptionDao();
-    public abstract PrescriptionTrainingDao prescriptionTrainingDao();
-    public abstract TrainingExerciseItemDao trainingExerciseItemDao();
-    public abstract ExerciseExerciseItemDao exerciseExerciseItemDao();
     private final MutableLiveData<Boolean> mIsDatabaseCreated = new MutableLiveData<>();
+
     public static AppDatabase getInstance(final Context context) {
-        if ( sInstance == null ) {
+        if (sInstance == null) {
             synchronized (AppDatabase.class) {
-                if ( sInstance==null ) {
+                if (sInstance == null) {
                     sInstance = buildDatabase(context.getApplicationContext());
                     sInstance.updataDatabaseCreated(context.getApplicationContext());
                 }
@@ -54,17 +45,38 @@ abstract public class AppDatabase extends RoomDatabase {
         }
         return sInstance;
     }
+
+    private static AppDatabase buildDatabase(final Context context) {
+        return Room.databaseBuilder(context, AppDatabase.class,
+                DATABASE_NAME).allowMainThreadQueries().build();
+    }
+
+    public abstract FuncionarioTesteDao funcionarioTesteDao();
+
+    public abstract UserDao userDao();
+
+    public abstract PrescriptionDao prescriptionDao();
+
+    public abstract TrainingDao trainingDao();
+
+    public abstract ExerciseDao exerciseDao();
+
+    public abstract ExerciseItemDao exerciseItemDao();
+
+    public abstract UserPrescriptionDao userPrescriptionDao();
+
+    public abstract PrescriptionTrainingDao prescriptionTrainingDao();
+
+    public abstract TrainingExerciseItemDao trainingExerciseItemDao();
+
+    public abstract ExerciseExerciseItemDao exerciseExerciseItemDao();
+
     private void setDatabaseCreated() {
         mIsDatabaseCreated.postValue(true);
     }
 
-    private static AppDatabase buildDatabase(final Context context) {
-        return Room.databaseBuilder(context,AppDatabase.class,
-                DATABASE_NAME).allowMainThreadQueries().build();
-    }
-
     private void updataDatabaseCreated(final Context context) {
-        if( context.getDatabasePath(DATABASE_NAME).exists()) {
+        if (context.getDatabasePath(DATABASE_NAME).exists()) {
             setDatabaseCreated(); //TODO REFATORAR
         }
     }

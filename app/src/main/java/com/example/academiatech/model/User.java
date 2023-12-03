@@ -3,8 +3,6 @@ package com.example.academiatech.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import com.example.academiatech.model.enums.Gender;
-
 import java.util.Date;
 import java.util.Objects;
 
@@ -16,7 +14,7 @@ public class User {
     private Long id;
     private String name;
     private String email;
-    private Gender gender;
+    private String gender;
     private Date birthdate;
     private String nickName;
     private String password;
@@ -25,7 +23,7 @@ public class User {
     public User() {
     }
 
-    public User(Long id, String name, String email, Gender gender,Date birthdate, String nickName, String password, String passwordRepeat) {
+    public User(Long id, String name, String email, String gender, Date birthdate, String nickName, String password, String passwordRepeat) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -36,9 +34,10 @@ public class User {
         this.passwordRepeat = passwordRepeat;
     }
 
-    public User(String name, String email, Date birthdate, String nickname, String password, String passwordRepeat) {
+    public User(String name, String email, String gender, Date birthdate, String nickname, String password, String passwordRepeat) {
         this.name = name;
         this.email = email;
+        this.gender = gender;
         this.birthdate = birthdate;
         this.nickName = nickname;
         this.password = password;
@@ -70,11 +69,11 @@ public class User {
         this.email = email;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 

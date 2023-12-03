@@ -14,8 +14,16 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MainActivityProfile extends AppCompatActivity {
 
     CircleImageView profile_image;
-
-
+    ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+                    Bundle bundle = result.getData().getExtras();
+                    Bitmap bitmap = (Bitmap) bundle.get("data");
+                    profile_image.setImageBitmap(bitmap);
+                }
+            }
+    );
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +39,6 @@ public class MainActivityProfile extends AppCompatActivity {
 
 
     }
-
-    ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            result -> {
-                if (result.getResultCode() == RESULT_OK && result.getData() != null){
-                    Bundle bundle = result.getData().getExtras();
-                    Bitmap bitmap = (Bitmap) bundle.get("data");
-                    profile_image.setImageBitmap(bitmap);
-                }
-            }
-    );
-
 
 
 }

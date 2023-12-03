@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
 
     <LinearLayout
+        android:id="@+id/linear_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:id="@+id/linear_ll"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/arrowback"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/arrowback" />
 
         <TextView
             android:layout_width="340dp"
@@ -28,12 +28,13 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/acadetech"
         android:layout_below="@id/linear_ll"
-        android:paddingRight="8dp"
-        android:paddingLeft="8dp"/>
+        android:background="@color/acadetech"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
 
 </LinearLayout>

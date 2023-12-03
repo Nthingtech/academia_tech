@@ -40,7 +40,7 @@ public class RecyclerViewExerciseItem extends AppCompatActivity {
         til_exercise_item_training = (TextInputLayout) findViewById(R.id.til_exercise_item_training);
         act_exercise_item_training = (AutoCompleteTextView) findViewById(R.id.act_exercise_item_training);
 
-        arrayAdapter_exercise_item_training = new ArrayAdapter<>(getApplicationContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,arrayList_exercise_item_training);
+        arrayAdapter_exercise_item_training = new ArrayAdapter<>(getApplicationContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, arrayList_exercise_item_training);
         act_exercise_item_training.setThreshold(1);
 
         act_exercise_item_training.setOnEditorActionListener(new TextView.OnEditorActionListener() {

@@ -74,4 +74,5 @@
     <string name="txt_weight">Carga</string>
     <string name="txt_note">Observação</string>
     <string name="txt_clients">Clientes</string>
+    <string name="txt_cadastrar">Cadastrar</string>
 </resources>

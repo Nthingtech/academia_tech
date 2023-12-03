@@ -38,6 +38,17 @@
                 android:padding="10dp"
                 android:src="@drawable/arrowback" />
 
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="@color/acadetech"
+                android:onClick="openActivityRegisterUser"
+                android:text="@string/txt_cadastrar"
+                app:cornerRadius="5dp" />
+
         </RelativeLayout>
 
         <TextView

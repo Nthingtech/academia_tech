@@ -16,12 +16,16 @@ public interface FuncionarioTesteDao { //TODO --> REMOVER APÓS TESTE OU REAPROV
 
     @Query("SELECT * FROM FuncionarioTeste")
     List<FuncionarioTeste> getFuncionarios();
+
     @Query("SELECT * FROM FuncionarioTeste where re=:reFuncionarioTeste")
     FuncionarioTeste buscarPorRe(int reFuncionarioTeste);
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(FuncionarioTeste funcionarioTeste);
+
     @Delete
     void delete(FuncionarioTeste funcionarioTeste);
+
     @Update
     void update(FuncionarioTeste funcionarioTeste);
 }

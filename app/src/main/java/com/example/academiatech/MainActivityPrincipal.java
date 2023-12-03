@@ -33,4 +33,11 @@ public class MainActivityPrincipal extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivityListaClient.class);
         startActivity(intent);
     }
+
+    public void openActivityRegisterUser(View view) {
+        Intent intent = new Intent(this, MainActivityRegister.class);
+        startActivity(intent);
+    }
+
+
 }

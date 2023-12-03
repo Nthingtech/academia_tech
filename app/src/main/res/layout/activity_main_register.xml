@@ -7,78 +7,58 @@
     android:background="@color/background_acad_tech2"
     tools:context=".MainActivityRegister">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="68dp"
-        android:background="@color/acadetech"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/textViewNome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/txt_academia_tech"
-        app:titleCentered="true"
-        app:titleTextColor="@color/design_default_color_background" />
-
     <TextView
         android:id="@+id/textViewNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="17dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_name"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewEmail1"
         app:layout_constraintEnd_toStartOf="@+id/registerName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/registerName"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintBottom_toTopOf="@+id/registerEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewNome"
-        app:layout_constraintTop_toTopOf="@+id/materialToolbar"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewEmail1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_email_register"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewGender"
+        app:layout_constraintBaseline_toBaselineOf="@+id/registerEmail"
         app:layout_constraintEnd_toStartOf="@+id/registerEmail"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/registerEmail"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="67dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBirth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewEmail1"
         app:layout_constraintTop_toBottomOf="@+id/registerName" />
@@ -87,122 +67,125 @@
         android:id="@+id/textViewGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="37dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_gender"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewBirthdate"
-        app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEmail1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/registerGender"
+        app:layout_constraintEnd_toStartOf="@+id/registerGender"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/registerBirthdate"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="38dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/registerNickName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewGender"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewBirthdate" />
+        app:layout_constraintStart_toEndOf="@+id/textViewBirth"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail1" />
 
     <TextView
         android:id="@+id/textViewBirth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="58dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="17dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_birth"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewNickName"
-        app:layout_constraintStart_toStartOf="@+id/textViewBirthdate"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBirthdate" />
+        app:layout_constraintBottom_toTopOf="@+id/registerGender"
+        app:layout_constraintEnd_toStartOf="@+id/registerBirthdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
 
     <TextView
         android:id="@+id/textViewBirthdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="21dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_date"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewBirth"
         app:layout_constraintEnd_toStartOf="@+id/registerBirthdate"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewGender" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/registerNickName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/registerPwd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewNickName" />
+        app:layout_constraintStart_toEndOf="@+id/textViewNickName"
+        app:layout_constraintTop_toBottomOf="@+id/registerGender" />
 
     <TextView
         android:id="@+id/textViewNickName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="11dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_user1"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewPwd1"
+        app:layout_constraintBottom_toBottomOf="@+id/registerNickName"
         app:layout_constraintEnd_toStartOf="@+id/registerNickName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBirth" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/registerPwd"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="26dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textViewPwd1"
+        app:layout_constraintBottom_toTopOf="@+id/registerRepeatPwd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewPwd1" />
+        app:layout_constraintStart_toEndOf="@+id/textViewPwd1"
+        app:layout_constraintTop_toBottomOf="@+id/registerNickName" />
 
     <TextView
         android:id="@+id/textViewPwd1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="67dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="12dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_pwd_register"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewRepeat"
+        app:layout_constraintBottom_toBottomOf="@+id/registerPwd"
         app:layout_constraintEnd_toStartOf="@+id/registerPwd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNickName" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/registerRepeatPwd"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="44dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="69dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/registerExit"
+        app:layout_constraintBottom_toTopOf="@+id/registerSave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewRepeat"
         app:layout_constraintTop_toBottomOf="@+id/registerPwd" />
@@ -211,54 +194,22 @@
         android:id="@+id/textViewRepeat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="57dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="18dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_repeat"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/registerExit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/registerRepeatPwd"
         app:layout_constraintEnd_toStartOf="@+id/registerRepeatPwd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPwd1" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="67dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/registerBirthdate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewGender"
-        app:layout_constraintTop_toTopOf="@+id/textViewEmail1">
-
-        <RadioButton
-            android:id="@+id/radioButtonMasc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/roboto"
-            android:text="@string/txt_masc" />
-
-        <RadioButton
-            android:id="@+id/radioButtonFem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/roboto"
-            android:text="@string/txt_fem" />
-    </RadioGroup>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/registerSave"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="33dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:onClick="register"
@@ -270,14 +221,15 @@
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/registerExit"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerRepeatPwd" />
 
     <Button
         android:id="@+id/registerExit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="33dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_exit"
@@ -288,7 +240,20 @@
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/registerSave"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRepeat" />
+        app:layout_constraintStart_toEndOf="@+id/registerSave" />
+
+    <EditText
+        android:id="@+id/registerGender"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/acadetech"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/registerNickName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewGender"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBirth" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
