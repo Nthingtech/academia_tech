@@ -17,31 +17,25 @@ public class User {
     private String gender;
     private Date birthdate;
     private String nickName;
-    private String password;
-    private String passwordRepeat;
 
     public User() {
     }
 
-    public User(Long id, String name, String email, String gender, Date birthdate, String nickName, String password, String passwordRepeat) {
+    public User(String name, String email, String gender, Date birthdate, String nickName) {
+        this.name = name;
+        this.email = email;
+        this.gender = gender;
+        this.birthdate = birthdate;
+        this.nickName = nickName;
+    }
+
+    public User(Long id, String name, String email, String gender, Date birthdate, String nickName) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.gender = gender;
         this.birthdate = birthdate;
         this.nickName = nickName;
-        this.password = password;
-        this.passwordRepeat = passwordRepeat;
-    }
-
-    public User(String name, String email, String gender, Date birthdate, String nickname, String password, String passwordRepeat) {
-        this.name = name;
-        this.email = email;
-        this.gender = gender;
-        this.birthdate = birthdate;
-        this.nickName = nickname;
-        this.password = password;
-        this.passwordRepeat = passwordRepeat;
     }
 
 
@@ -93,21 +87,6 @@ public class User {
         this.nickName = nickName;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getPasswordRepeat() {
-        return passwordRepeat;
-    }
-
-    public void setPasswordRepeat(String imageUser) {
-        this.passwordRepeat = passwordRepeat;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -128,10 +107,9 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", gender=" + gender +
+                ", gender='" + gender + '\'' +
+                ", birthdate=" + birthdate +
                 ", nickName='" + nickName + '\'' +
-                ", password='" + password + '\'' +
-                ", passwordRepeat='" + passwordRepeat + '\'' +
                 '}';
     }
 }

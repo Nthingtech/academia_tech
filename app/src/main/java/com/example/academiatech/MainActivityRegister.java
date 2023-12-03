@@ -21,8 +21,7 @@ public class MainActivityRegister extends AppCompatActivity {
     private EditText registerGender;
     private EditText registerBirthdate;
     private EditText registerNickName;
-    private EditText registerPwd;
-    private EditText registerRepeatPwd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +33,6 @@ public class MainActivityRegister extends AppCompatActivity {
         registerEmail = findViewById(R.id.registerEmail);
         registerBirthdate = findViewById(R.id.registerBirthdate);
         registerNickName = findViewById(R.id.registerNickName);
-        registerPwd = findViewById(R.id.registerPwd);
-        registerRepeatPwd = findViewById(R.id.registerRepeatPwd);
         registerGender = findViewById(R.id.registerGender);
     }
 
@@ -55,13 +52,11 @@ public class MainActivityRegister extends AppCompatActivity {
         }
 
         String nickname = registerNickName.getText().toString();
-        String password = registerPwd.getText().toString();
-        String passwordRepeat = registerRepeatPwd.getText().toString();
 
-        User u = new User(name, email, gender, birthdate, nickname, password, passwordRepeat);
+
+        User u = new User(name, email, gender, birthdate, nickname);
         userDao.insertUser(u);
 
-        finish();
     }
 
 

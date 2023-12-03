@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ClientViewHolder extends RecyclerView.ViewHolder {
+public class UserViewHolder extends RecyclerView.ViewHolder {
 
     final TextView id;
     final TextView name;
@@ -14,9 +14,8 @@ public class ClientViewHolder extends RecyclerView.ViewHolder {
     final TextView email;
     final TextView nickname;
 
-    public ClientViewHolder(View itemView) {
+    public UserViewHolder(View itemView) {
         super(itemView);
-
         id = itemView.findViewById(R.id.item_id);
         name = itemView.findViewById(R.id.item_name);
         gender = itemView.findViewById(R.id.item_gender);

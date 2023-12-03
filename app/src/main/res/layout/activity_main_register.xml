@@ -11,9 +11,9 @@
         android:id="@+id/textViewNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="18dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_name"
         android:textStyle="bold"
@@ -24,17 +24,14 @@
     <EditText
         android:id="@+id/registerName"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="46dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/registerEmail"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewNome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewNome"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textViewNome" />
 
     <TextView
         android:id="@+id/textViewEmail1"
@@ -52,23 +49,24 @@
     <EditText
         android:id="@+id/registerEmail"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="91dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="67dp"
+        android:layout_marginBottom="89dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/textViewBirth"
+        app:layout_constraintBottom_toBottomOf="@+id/registerGender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewEmail1"
-        app:layout_constraintTop_toBottomOf="@+id/registerName" />
+        app:layout_constraintTop_toTopOf="@+id/registerName" />
 
     <TextView
         android:id="@+id/textViewGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_gender"
         android:textStyle="bold"
@@ -80,43 +78,40 @@
         android:id="@+id/registerBirthdate"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="31dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewGender"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewBirth"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEmail1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewBirth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_birth"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/registerGender"
         app:layout_constraintEnd_toStartOf="@+id/registerBirthdate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBirthdate" />
 
     <TextView
         android:id="@+id/textViewBirthdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="41dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_date"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewBirth"
+        app:layout_constraintBottom_toBottomOf="@+id/registerBirthdate"
         app:layout_constraintEnd_toStartOf="@+id/registerBirthdate"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -125,83 +120,26 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="92dp"
-        android:layout_marginBottom="30dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/registerPwd"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewNickName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewNickName"
-        app:layout_constraintTop_toBottomOf="@+id/registerGender" />
+        app:layout_constraintStart_toEndOf="@+id/textViewNickName" />
 
     <TextView
         android:id="@+id/textViewNickName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_user1"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/registerNickName"
         app:layout_constraintEnd_toStartOf="@+id/registerNickName"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerPwd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="26dp"
-        android:backgroundTint="@color/acadetech"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/registerRepeatPwd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewPwd1"
-        app:layout_constraintTop_toBottomOf="@+id/registerNickName" />
-
-    <TextView
-        android:id="@+id/textViewPwd1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="12dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/txt_pwd_register"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/registerPwd"
-        app:layout_constraintEnd_toStartOf="@+id/registerPwd"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/registerRepeatPwd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="69dp"
-        android:backgroundTint="@color/acadetech"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/registerSave"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewRepeat"
-        app:layout_constraintTop_toBottomOf="@+id/registerPwd" />
-
-    <TextView
-        android:id="@+id/textViewRepeat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="18dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/txt_repeat"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/registerRepeatPwd"
-        app:layout_constraintEnd_toStartOf="@+id/registerRepeatPwd"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBirth" />
 
     <Button
         android:id="@+id/registerSave"
@@ -209,7 +147,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
         android:layout_marginEnd="65dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="34dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:onClick="register"
@@ -221,15 +159,14 @@
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/registerExit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerRepeatPwd" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/registerExit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="62dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="34dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_exit"
@@ -245,15 +182,16 @@
     <EditText
         android:id="@+id/registerGender"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="36dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="130dp"
         android:backgroundTint="@color/acadetech"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/registerNickName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewGender"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBirth" />
+        app:layout_constraintTop_toBottomOf="@+id/registerName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

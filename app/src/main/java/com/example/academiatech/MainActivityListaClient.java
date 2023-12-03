@@ -1,10 +1,9 @@
 package com.example.academiatech;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,15 +23,17 @@ public class MainActivityListaClient extends AppCompatActivity {
         AppDatabase db = AppDatabase.getInstance(this);
         UserDao userDao = db.userDao();
         List<User> users = userDao.getUsers();
-        recyclerView.setAdapter(new ClientAdapter(users, this));
+        recyclerView.setAdapter(new UserAdapter(users, this));
         RecyclerView.LayoutManager layoutManager =
                 new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,
                         false);
         recyclerView.setLayoutManager(layoutManager);
+
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(
+                this,
+                DividerItemDecoration.VERTICAL
+        );
+        recyclerView.addItemDecoration(dividerItemDecoration);
     }
 
-    public void backMainPrincipal(View view) {
-        Intent intent = new Intent(this, MainActivityPrincipal.class);
-        startActivity(intent);
-    }
 }
