@@ -13,7 +13,7 @@ public class MainActivityPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_principal);
     }
-    
+
     public void openActivityPrescription(View view) {
         Intent intent = new Intent(this, MainActivityPrescription.class);
         startActivity(intent);
