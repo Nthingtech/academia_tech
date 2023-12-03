@@ -9,14 +9,14 @@
 
     <Button
         android:id="@+id/buttonAcessCount"
-        android:layout_width="327dp"
-        android:layout_height="52dp"
+        android:layout_width="299dp"
+        android:layout_height="69dp"
         android:layout_marginStart="42dp"
         android:layout_marginEnd="42dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="127dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/roboto"
-        android:onClick="openActivityLogin"
+        android:onClick="openActivityPrincipal"
         android:text="@string/txt_acess_account"
         android:textColor="#008AB8"
         android:textColorHighlight="#008AB8"
@@ -25,37 +25,23 @@
         android:textSize="17sp"
         android:textStyle="normal|bold"
         app:cornerRadius="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="141dp"
-        android:layout_marginBottom="158dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="141dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonAcessCount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo2" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:fontFamily="@font/roboto"
-        android:onClick="openActivityRegister"
-        android:text="Novo por aqui? Cadastre-se"
-        android:textColor="@color/material_dynamic_primary60"
-        android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAcessCount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
