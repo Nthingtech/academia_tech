@@ -73,4 +73,5 @@
     <string name="txt_rest">Intervalo</string>
     <string name="txt_weight">Carga</string>
     <string name="txt_note">Observação</string>
+    <string name="txt_clients">Clientes</string>
 </resources>

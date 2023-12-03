@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,6 +16,17 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize">
+
+            <Button
+                android:id="@+id/listClient"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/arrowback"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="245dp"
+                android:backgroundTint="@color/acadetech"
+                android:text="@string/txt_clients"
+                app:cornerRadius="5dp" />
 
             <ImageView
                 android:id="@+id/arrowback"
