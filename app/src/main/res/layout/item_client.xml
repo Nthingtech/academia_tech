@@ -109,7 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="27dp"
-        android:text="@string/txt_birthdate"
+        android:text="@string/txt_nasc"
         app:layout_constraintEnd_toStartOf="@+id/item_birthdate"
         app:layout_constraintTop_toTopOf="@+id/item_nickName" />
 

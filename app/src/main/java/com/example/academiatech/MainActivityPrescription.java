@@ -98,4 +98,9 @@ public class MainActivityPrescription extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openActivityListExercise(View view) {
+        Intent intent = new Intent(this, MainActivityListaExercise.class);
+        startActivity(intent);
+    }
+
 }

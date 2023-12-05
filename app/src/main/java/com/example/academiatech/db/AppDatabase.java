@@ -77,7 +77,7 @@ abstract public class AppDatabase extends RoomDatabase {
 
     private void updataDatabaseCreated(final Context context) {
         if (context.getDatabasePath(DATABASE_NAME).exists()) {
-            setDatabaseCreated(); //TODO REFATORAR
+            setDatabaseCreated();
         }
     }
 
