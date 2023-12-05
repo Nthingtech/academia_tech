@@ -11,14 +11,22 @@ public class Exercise {
     @PrimaryKey(autoGenerate = true)
     private Long id;
     private String exerciseName;
-    private String machineNumber;
+    private int machineNumber;
     private String muscleGroup;
     private String videoUri;
 
     public Exercise() {
     }
 
-    public Exercise(Long id, String exerciseName, String machineNumber, String muscleGroup, String videoUri) {
+    public Exercise(String exerciseName, int machineNumber, String muscleGroup, String videoUri) {
+        this.id = id;
+        this.exerciseName = exerciseName;
+        this.machineNumber = machineNumber;
+        this.muscleGroup = muscleGroup;
+        this.videoUri = videoUri;
+    }
+
+    public Exercise(Long id, String exerciseName, int machineNumber, String muscleGroup, String videoUri) {
         this.id = id;
         this.exerciseName = exerciseName;
         this.machineNumber = machineNumber;
@@ -42,11 +50,11 @@ public class Exercise {
         this.exerciseName = exerciseName;
     }
 
-    public String getMachineNumber() {
+    public int getMachineNumber() {
         return machineNumber;
     }
 
-    public void setMachineNumber(String machineNumber) {
+    public void setMachineNumber(int machineNumber) {
         this.machineNumber = machineNumber;
     }
 

@@ -50,7 +50,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="26dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="13dp"
         android:layout_marginBottom="25dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_prescription_begin"
@@ -58,6 +58,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/tv"
         app:layout_constraintEnd_toEndOf="@+id/datePicker"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_client" />
 
@@ -322,6 +323,17 @@
         app:layout_constraintStart_toEndOf="@+id/datePicker"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/dumbbell_solid" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/txt_registrer_exercise"
+        android:textColor="@color/acadetech"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

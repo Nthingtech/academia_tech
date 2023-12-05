@@ -58,6 +58,10 @@ public class MainActivityRegister extends AppCompatActivity {
         User u = new User(name, email, gender, birthdate, nickname);
         userDao.insertUser(u);
 
+        Intent intent = new Intent(this, MainActivityRegister.class);
+        startActivity(intent);
+        finish();
+
     }
 
     public void openActivityPrincipal(View view) {
