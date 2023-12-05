@@ -19,7 +19,6 @@ public class Exercise {
     }
 
     public Exercise(String exerciseName, int machineNumber, String muscleGroup, String videoUri) {
-        this.id = id;
         this.exerciseName = exerciseName;
         this.machineNumber = machineNumber;
         this.muscleGroup = muscleGroup;

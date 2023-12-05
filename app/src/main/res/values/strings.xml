@@ -78,4 +78,6 @@
     <string name="txt_id">Nr. Matrícula</string>
     <string name="txt_nickname">Usuário</string>
     <string name="txt_delete">Deletar</string>
+    <string name="txt_nasc">Nascimento</string>
+    <string name="txt_exercise_list">Lista de exercícios</string>
 </resources>
