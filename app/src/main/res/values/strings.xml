@@ -61,8 +61,8 @@
     <string name="txt_freq2">2ª Freq.</string>
     <string name="txt_freq3">3ª Freq.</string>
     <string name="txt_fct_rest">Média FCT Repouso:</string>
-    <string name="txt_fctMax">Frequência cardíaca mínima de treino:</string>
-    <string name="txt_fctmin">Frequência cardíaca mínima de treino:</string>
+    <string name="txt_fctMax">Frequência cardíaca max. de treino:</string>
+    <string name="txt_fctmin">Frequência cardíaca mín. de treino:</string>
     <string name="txt_registrer_exercise">Cadastrar novo exercício</string>
     <string name="txt_exercise">Exercício</string>
     <string name="txt_machine_number">N° apr.</string>
@@ -80,4 +80,5 @@
     <string name="txt_delete">Deletar</string>
     <string name="txt_nasc">Nascimento</string>
     <string name="txt_exercise_list">Lista de exercícios</string>
+    <string name="txt_idade">Idade</string>
 </resources>

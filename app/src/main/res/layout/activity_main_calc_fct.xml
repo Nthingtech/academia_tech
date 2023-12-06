@@ -11,16 +11,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_fct_intesity"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="69dp"
         app:boxStrokeColor="@color/acadetech"
         app:cursorColor="@color/acadetech"
         app:hintTextColor="@color/acadetech"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@drawable/baseline_local_fire_department_24">
+        app:startIconDrawable="@drawable/baseline_local_fire_department_24"
+        tools:layout_editor_absoluteY="69dp">
 
         <AutoCompleteTextView
             android:id="@+id/act_exercise_item"
@@ -37,9 +34,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
         android:background="@color/acadetech"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_calc_fct"
@@ -47,100 +43,82 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="1dp" />
 
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_fct_rest"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="468dp" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="18dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_fctMax"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="553dp" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="21dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_fctmin"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="510dp" />
 
     <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="0dp"
+        android:id="@+id/editTextfreq1"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
         android:ems="10"
         android:hint="@string/txt_freq1"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintTop_toBottomOf="@+id/til_fct_intesity" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="277dp" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="0dp"
+        android:id="@+id/editTextfreq2"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="@string/txt_freq2"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber3"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="335dp" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/editTextfreq3"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
         android:ems="10"
         android:hint="@string/txt_freq3"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="391dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="15dp"
         android:backgroundTint="@color/white"
         android:text="@string/txt_save"
         android:textColor="@color/acadetech"
         app:cornerRadius="1dp"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="596dp" />
 
     <Button
         android:id="@+id/button9"
@@ -151,10 +129,45 @@
         android:text="@string/txt_cancel"
         android:textColor="@color/acadetech"
         app:cornerRadius="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="596dp" />
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/txt_idade"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <EditText
+        android:id="@+id/editTextFct1"
+        android:layout_width="135dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <EditText
+        android:id="@+id/editTextFct2"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <EditText
+        android:id="@+id/editTextFct3"
+        android:layout_width="95dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="544dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

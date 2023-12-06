@@ -3,15 +3,41 @@ package com.example.academiatech;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivityCalcFct extends AppCompatActivity {
 
+    private EditText editTextfreq1;
+    private EditText editTextfreq2;
+    private EditText editTextfreq3;
+    private EditText editTextIdade;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_calc_fct);
+        editTextfreq1 = findViewById(R.id.editTextfreq1);
+        editTextfreq2 = findViewById(R.id.editTextfreq2);
+        editTextfreq3 = findViewById(R.id.editTextfreq3);
+        editTextIdade = findViewById(R.id.editTextIdade);
+    }
+
+    public void fct(View view) {
+        double fRepo1, fRepo2, fRepo3, idade, fct1;
+        fRepo1 = Double.parseDouble(editTextfreq1.getText().toString());
+        fRepo2 = Double.parseDouble(editTextfreq2.getText().toString());
+        fRepo3 = Double.parseDouble(editTextfreq3.getText().toString());
+        idade = Double.parseDouble(editTextIdade.getText().toString());
+
+        double max = 208 - (0.7 * idade);
+        double repo = (fRepo1 + fRepo2 + fRepo3) / 3;
+        double reserv = max - repo;
+        fct1 = reserv * 0.8 + repo;
+
+
+
     }
 
     public void openActivityPrincipal(View view) {
