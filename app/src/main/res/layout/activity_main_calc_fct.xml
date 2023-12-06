@@ -11,13 +11,16 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_fct_intesity"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
         app:boxStrokeColor="@color/acadetech"
         app:cursorColor="@color/acadetech"
         app:hintTextColor="@color/acadetech"
-        app:startIconDrawable="@drawable/baseline_local_fire_department_24"
-        tools:layout_editor_absoluteY="69dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/baseline_local_fire_department_24">
 
         <AutoCompleteTextView
             android:id="@+id/act_exercise_item"
@@ -34,8 +37,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
         android:background="@color/acadetech"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_calc_fct"
@@ -43,131 +47,187 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_fct_rest"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="468dp" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextMedia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfreq3" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_fctMax"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="553dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextFct2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFct2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
         android:fontFamily="@font/roboto"
         android:text="@string/txt_fctmin"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextFct1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
         android:id="@+id/editTextfreq1"
-        android:layout_width="80dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
         android:ems="10"
         android:hint="@string/txt_freq1"
         android:inputType="number"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="277dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextfreq2"
+        app:layout_constraintStart_toStartOf="@+id/editTextfreq2"
+        app:layout_constraintTop_toBottomOf="@+id/til_fct_intesity" />
 
     <EditText
         android:id="@+id/editTextfreq2"
-        android:layout_width="80dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
         android:ems="10"
         android:hint="@string/txt_freq2"
         android:inputType="number"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextfreq3"
+        app:layout_constraintStart_toStartOf="@+id/editTextfreq3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfreq1" />
 
     <EditText
         android:id="@+id/editTextfreq3"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
         android:ems="10"
         android:hint="@string/txt_freq3"
         android:inputType="number"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="391dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfreq2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonfct1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="17dp"
         android:backgroundTint="@color/white"
-        android:text="@string/txt_save"
+        android:onClick="fct"
+        android:text="@string/txt_min"
         android:textColor="@color/acadetech"
         app:cornerRadius="1dp"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="596dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonfct2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/txt_max"
+        android:textColor="@color/acadetech"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView11" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="17dp"
         android:backgroundTint="@color/white"
         android:onClick="openActivityPrincipal"
-        android:text="@string/txt_cancel"
+        android:text="@string/txt_exit"
         android:textColor="@color/acadetech"
         app:cornerRadius="1dp"
-        tools:layout_editor_absoluteX="242dp"
-        tools:layout_editor_absoluteY="596dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/editTextIdade"
         android:layout_width="84dp"
-        android:layout_height="51dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="60dp"
         android:ems="10"
         android:hint="@string/txt_idade"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="210dp" />
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextfreq1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_fct_intesity" />
+
+    <EditText
+        android:id="@+id/editTextMedia"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfreq3" />
 
     <EditText
         android:id="@+id/editTextFct1"
-        android:layout_width="135dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="67dp"
         android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="183dp"
-        tools:layout_editor_absoluteY="453dp" />
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfreq3" />
 
     <EditText
         android:id="@+id/editTextFct2"
-        android:layout_width="95dp"
-        android:layout_height="31dp"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="84dp"
         android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="503dp" />
-
-    <EditText
-        android:id="@+id/editTextFct3"
-        android:layout_width="95dp"
-        android:layout_height="31dp"
-        android:ems="10"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="544dp" />
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

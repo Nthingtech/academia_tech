@@ -81,4 +81,6 @@
     <string name="txt_nasc">Nascimento</string>
     <string name="txt_exercise_list">Lista de exercícios</string>
     <string name="txt_idade">Idade</string>
+    <string name="txt_min">Min</string>
+    <string name="txt_max">Max</string>
 </resources>
