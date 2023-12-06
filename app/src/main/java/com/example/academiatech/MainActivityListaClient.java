@@ -25,7 +25,7 @@ public class MainActivityListaClient extends AppCompatActivity {
         AppDatabase db = AppDatabase.getInstance(this);
         UserDao userDao = db.userDao();
         List<User> users = userDao.getUsers();
-        recyclerView.setAdapter(new UserAdapter(users, this, userDao));
+        recyclerView.setAdapter(new UserAdapter(users, this, userDao));//TODO refatorar para User
         RecyclerView.LayoutManager layoutManager =
                 new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,
                         false);
