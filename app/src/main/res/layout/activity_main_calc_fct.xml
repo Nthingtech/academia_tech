@@ -147,6 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
+        android:onClick="openActivityPrincipal"
         android:text="@string/txt_cancel"
         android:textColor="@color/acadetech"
         app:cornerRadius="1dp"
