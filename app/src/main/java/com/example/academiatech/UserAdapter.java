@@ -49,11 +49,11 @@ public class UserAdapter extends RecyclerView.Adapter {
         userViewHolder.deleteClient.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 int adapterPosition = holder.getAdapterPosition();
-                userDao.deleteUser(user); // delete the user from the database
-                users.remove(adapterPosition); // remove the user from the list
-                notifyItemRemoved(adapterPosition); // notify the adapter about the removed item
+                userDao.deleteUser(user);
+                users.remove(adapterPosition);
+                notifyItemRemoved(adapterPosition);
 
-                // update the list of users
+
                 users = userDao.getUsers();
 
             }

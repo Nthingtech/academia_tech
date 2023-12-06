@@ -23,6 +23,7 @@ public class MainActivityRegisterExercise extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_register_exercise);
+        Exercise exercise = new Exercise();
 
         editMachineNumber = findViewById(R.id.editMachineNumber);
         editMuscleGroup = findViewById(R.id.editMuscleGroup);
