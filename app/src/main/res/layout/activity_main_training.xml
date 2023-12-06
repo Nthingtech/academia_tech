@@ -9,7 +9,7 @@
     tools:context=".MainActivityTraining">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewTraining"
         android:layout_width="match_parent"
         android:layout_height="550dp"
         android:layout_marginBottom="30dp"

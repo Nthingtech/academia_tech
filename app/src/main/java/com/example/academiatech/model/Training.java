@@ -3,8 +3,6 @@ package com.example.academiatech.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-import com.example.academiatech.model.enums.Status;
-
 import java.util.Date;
 import java.util.Objects;
 
@@ -16,18 +14,16 @@ public class Training {
     private String trainingName;
     private Integer totalTraining;
     private Date concludeAt;
-    private Status status;
     private int prescriptionId;
 
     public Training() {
     }
 
-    public Training(Long id, String trainingName, Integer totalTraining, Date concludeAt, Status status) {
+    public Training(Long id, String trainingName, Integer totalTraining, Date concludeAt) {
         this.id = id;
         this.trainingName = trainingName;
         this.totalTraining = totalTraining;
         this.concludeAt = concludeAt;
-        this.status = status;
     }
 
     public Long getId() {
@@ -62,14 +58,6 @@ public class Training {
         this.concludeAt = concludeAt;
     }
 
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
-
     public int getPrescriptionId() {
         return prescriptionId;
     }
@@ -98,7 +86,7 @@ public class Training {
                 ", trainingName='" + trainingName + '\'' +
                 ", totalTraining=" + totalTraining +
                 ", concludeAt=" + concludeAt +
-                ", status=" + status +
+                ", prescriptionId=" + prescriptionId +
                 '}';
     }
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
+
+<TextView
+    android:id="@+id/exercise_item_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/exercise_item_series"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/exercise_item_qtd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/exercise_item_rest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/exercise_item_weight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/exercise_item_obs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp" />
+
+</LinearLayout>

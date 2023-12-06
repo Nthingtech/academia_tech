@@ -13,8 +13,9 @@ public class ExerciseItem {
     private Integer seriesNumber;
     private Integer measurementType;
     private Integer rest;
-    private Integer concluded;
     private Integer quantityNumber;
+    private String obs;
+
 
     private int trainingId;
 
@@ -23,13 +24,13 @@ public class ExerciseItem {
     public ExerciseItem() {
     }
 
-    public ExerciseItem(Long id, Integer seriesNumber, Integer measurementType, Integer rest, Integer concluded, Integer quantityNumber) {
+    public ExerciseItem(Long id, Integer seriesNumber, Integer measurementType, Integer rest, Integer quantityNumber, String obs) {
         this.id = id;
         this.seriesNumber = seriesNumber;
         this.measurementType = measurementType;
         this.rest = rest;
-        this.concluded = concluded;
         this.quantityNumber = quantityNumber;
+        this.obs = obs;
     }
 
     public Long getId() {
@@ -64,20 +65,20 @@ public class ExerciseItem {
         this.rest = rest;
     }
 
-    public Integer getConcluded() {
-        return concluded;
-    }
-
-    public void setConcluded(Integer concluded) {
-        this.concluded = concluded;
-    }
-
     public Integer getQuantityNumber() {
         return quantityNumber;
     }
 
     public void setQuantityNumber(Integer quantityNumber) {
         this.quantityNumber = quantityNumber;
+    }
+
+    public String getObs() {
+        return obs;
+    }
+
+    public void setObs(String obs) {
+        this.obs = obs;
     }
 
     public int getTrainingId() {
@@ -116,8 +117,10 @@ public class ExerciseItem {
                 ", seriesNumber=" + seriesNumber +
                 ", measurementType=" + measurementType +
                 ", rest=" + rest +
-                ", concluded=" + concluded +
                 ", quantityNumber=" + quantityNumber +
+                ", obs='" + obs + '\'' +
+                ", trainingId=" + trainingId +
+                ", exerciseId=" + exerciseId +
                 '}';
     }
 }
