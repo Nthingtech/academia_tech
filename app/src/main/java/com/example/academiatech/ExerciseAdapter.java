@@ -37,7 +37,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter {
         Exercise exercise = exercises.get(position);
         exerciseViewHolder.id.setText(Long.toString(exercise.getId()));
         exerciseViewHolder.exerciseName.setText(exercise.getExerciseName());
-        exerciseViewHolder.machineNumber.setText(exercise.getMachineNumber());
+        exerciseViewHolder.machineNumber.setText(Integer.toString(exercise.getMachineNumber()));
         exerciseViewHolder.muscleGroup.setText(exercise.getMuscleGroup());
         exerciseViewHolder.videoUri.setText(exercise.getVideoUri());
 
