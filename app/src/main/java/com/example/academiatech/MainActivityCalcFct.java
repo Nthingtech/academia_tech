@@ -44,7 +44,8 @@ public class MainActivityCalcFct extends AppCompatActivity {
         double repo = (fRepo1 + fRepo2 + fRepo3) / 3;
         double reserv = max - repo;
         fct1 = reserv * 0.8 + repo;
-        editTextFct1.setText(Double.toString(fct1));
+        int fct1Int = (int) fct1;
+        editTextFct1.setText(Integer.toString(fct1Int));
     }
 
     public void fct2(View view) {
@@ -58,7 +59,18 @@ public class MainActivityCalcFct extends AppCompatActivity {
         double repo = (fRepo1 + fRepo2 + fRepo3) / 3;
         double reserv = max - repo;
         fct2 = reserv * 0.9 + repo;
-        editTextFct2.setText(Double.toString(fct2));
+        int fct2Int = (int) fct2;
+        editTextFct2.setText(Integer.toString(fct2Int));
+    }
+
+    public void media(View view) {
+        double fRepo1, fRepo2, fRepo3, media;
+        fRepo1 = Double.parseDouble(editTextfreq1.getText().toString());
+        fRepo2 = Double.parseDouble(editTextfreq2.getText().toString());
+        fRepo3 = Double.parseDouble(editTextfreq3.getText().toString());
+        media = (fRepo1 + fRepo2 + fRepo3) / 3;
+        int mediaInt = (int) media;
+        editTextMedia.setText(Integer.toString(mediaInt));
     }
 
     public void openActivityPrincipal(View view) {

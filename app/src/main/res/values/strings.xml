@@ -83,4 +83,5 @@
     <string name="txt_idade">Idade</string>
     <string name="txt_min">Min</string>
     <string name="txt_max">Max</string>
+    <string name="txt_media_button">Media</string>
 </resources>
