@@ -19,14 +19,14 @@ public class MainActivityTraining extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { //TODO REFACTOR FOR EXERCISEITEM
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_training);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         AppDatabase db = AppDatabase.getInstance(this);
         UserDao userDao = db.userDao();
         List<User> users = userDao.getUsers();
-        recyclerView.setAdapter(new UserAdapter(users, this, userDao));
+        recyclerView.setAdapter(new UserAdapter(users, this, userDao));//TODO CREATE EXERCISEADAPTER AND EXERCISEVIEWHOLDER
         RecyclerView.LayoutManager layoutManager =
                 new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,
                         false);
